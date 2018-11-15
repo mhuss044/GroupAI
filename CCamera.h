@@ -26,6 +26,7 @@
  *			build flying game; ++fwd vec
  *
  *		build scripted cam; cinematics gets
+ *		TODO: figure out a good value for MAX CAMERA pitch
  *			transcript class; holds sequence of operations; move_fwd over 5s, rot 40deg over 2s, then moveright and pitch down over 3s
  */
 
@@ -35,6 +36,7 @@
 #define CAMERA_ZOOM 1000                                          	// Cam distance from refpt
 #define CAMERA_TRANSLATE_SPEED	3									// Cam move speed (wasd), remember, depends on fps: high fps = more translate/sec and vice versa
 #define CAMERA_ROTATE_DEGREES 0.1									// Cam degress to rorate, remember, depends on fps: high fps = more translate/sec and vice versa
+#define CAMERA_MAX_PITCH 90									// max cam pitch angle.. to refine...
 
 enum moveDirections													// Directions to translate camera
 {
@@ -69,6 +71,7 @@ public:
     float maxPitch, rotationSpeed, translateSpeed;					// Greatest angle at which user can look up/down
 
     CFixedPitchCamera(float camViewPtX, float camViewPtY, float camViewPtZ, float pitchMax, float rotSpeed, float transSpeed);
+    CFixedPitchCamera(int camViewPtX, int camViewPtY, int camViewPtZ);
     void translatePos(float x, float y, float z);
     void Move(moveDirections direction);
     void Look(lookOperations operation);
@@ -120,6 +123,44 @@ CFixedPitchCamera::CFixedPitchCamera(float camViewPtX, float camViewPtY, float c
     MultMat3x4xV(camYaw, &camRightVec);
 }
 
+CFixedPitchCamera::CFixedPitchCamera(int camViewPtX, int camViewPtY, int camViewPtZ)// Initialize.
+{
+	maxPitch = CAMERA_MAX_PITCH;
+	rotationSpeed = CAMERA_ROTATE_DEGREES;
+	translateSpeed = CAMERA_TRANSLATE_SPEED;
+
+    // Init mats;
+	InitMat(camPitch);
+    InitMat(camYaw);
+    InitMat(camRoll);
+
+	viewPt.x = camViewPtX;										// Mid map
+	viewPt.y = camViewPtY;
+	viewPt.z = camViewPtZ;
+
+    camPos.x = viewPt.x + CAMERA_ZOOM;
+    camPos.y = viewPt.y + CAMERA_ZOOM;
+    camPos.z = viewPt.z + CAMERA_ZOOM;
+
+    // Define up vector
+    camUpVec.x = 0.0;
+    camUpVec.y = 1.0;
+    camUpVec.z = 0.0;
+
+    // Get normal pointing towards viewPt from camPos;
+    camForwardVec.x = (viewPt.x - camPos.x)/abs(int(viewPt.x - camPos.x));
+    camForwardVec.y = (viewPt.y - camPos.y)/abs(int(viewPt.y - camPos.y));
+    camForwardVec.z = (viewPt.z - camPos.z)/abs(int(viewPt.z - camPos.z));
+
+    // Right dir vec is 90 from forward vec; must be better way doing this, get rightvec from forward?
+    //		so instead of multmat for right vec, maybe derive it from forward?!?
+    camRightVec.x = camForwardVec.x;
+    camRightVec.y = camForwardVec.y;
+    camRightVec.z = camForwardVec.z;
+
+    MakeRotMat3x4(camYaw, 270, 0, 1, 0);                                 // 270 Degree(RHS wrt forward vec), rotate around y-axis
+    MultMat3x4xV(camYaw, &camRightVec);
+}
 void CFixedPitchCamera::translatePos(float x, float y, float z)
 {
 	// Move the camera position;

@@ -8,7 +8,7 @@
 //#include <windows.h>
 #include <time.h>               // otherwise get: "clock_t does not name a type", followed by several .... not declared in this scope errors
 #include <stdio.h>              // for sprintf
-//#include <string.h>
+#include <string.h>				// needed for strlen
 //#include <stdlib.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
@@ -54,7 +54,7 @@ int cursorX = 0, cursorY = 0;
 *************-*-*-*-*USR*-*-*-*-********************
 ***********************************************************/
 #include "ENDIAN.H"
-#include "TGA Loader.h"
+//#include "TGA Loader.h"		// dont need to include in main, needed for skybox only
 #include "CommonTypes.h"
 #include "MFont.h"
 #include "CGUI.h"
@@ -72,27 +72,27 @@ int cursorX = 0, cursorY = 0;
 ***********************************************************/
 CKeyboard playerKeyboard;
 CCubeGod MainGameCubeGod;                                       // class creates/destroys cube list
-CCamera MainGameCamera(GAME_MAP_SIZE_X, 0, GAME_MAP_SIZE_Z);
+CFixedPitchCamera MainGameCamera(GAME_MAP_SIZE_X, 0, GAME_MAP_SIZE_Z);
 /*****DEFINITIONS*******************************************
 *************-*-*-*-*DEFINITIONS*-*-*-*-********************
 ***********************************************************/
 void inputDistributor(void)
 {
 	if(playerKeyboard.queryNormalKey(119))	// W
-    {
-    	MainGameCamera.Move(FORWARD);
-    }
+	{
+		MainGameCamera.Move(CAMERA_MOVE_FORWARD);
+	}
 	if(playerKeyboard.queryNormalKey(115))	// S
-    {
-		MainGameCamera.Move(BACKWARD);
-    }
+	{
+		MainGameCamera.Move(CAMERA_MOVE_BACKWARD);
+	}
 	if(playerKeyboard.queryNormalKey(100))	// D
-    {
-    	MainGameCamera.Move(RIGHT);
-    }
+	{
+		MainGameCamera.Move(CAMERA_MOVE_RIGHT);
+	}
 	if(playerKeyboard.queryNormalKey(97))	// A
 	{
-		MainGameCamera.Move(LEFT);
+		MainGameCamera.Move(CAMERA_MOVE_LEFT);
 	}
 
 	// Settings:
@@ -105,10 +105,10 @@ void inputDistributor(void)
 	}
 	if(playerKeyboard.queryNormalKey(112))	// p
 	{
-        if(perspective == true)
-            perspective = false;
-        else
-            perspective = true;
+		if(perspective == true)
+			perspective = false;
+		else
+			perspective = true;
 	}
 	if(playerKeyboard.queryNormalKey(113))	// q
 	{
@@ -116,7 +116,7 @@ void inputDistributor(void)
 			glDisable(GL_DEPTH_TEST);
 		else
 			glEnable(GL_DEPTH_TEST);
-	    glutPostRedisplay();
+		glutPostRedisplay();
 	}
 	if(playerKeyboard.queryNormalKey(45))	// -
 	{
@@ -148,63 +148,63 @@ void inputDistributor(void)
 
 void drawEnvironment(void)													// Costs approx 350 fps
 {
-    // Draw Sky:
+	// Draw Sky:
 	glColor3f(1.0, 1.0, 1.0);
-    MainGameSkyBox.renderSkyBox(MainGameCamera.camPos.x, MainGameCamera.camPos.y, MainGameCamera.camPos.z);
+	MainGameSkyBox.renderSkyBox(MainGameCamera.camPos.x, MainGameCamera.camPos.y, MainGameCamera.camPos.z);
 
-/*
-	for(int a = GAME_MAP_ZIZE_W; a >= -1*(GAME_MAP_ZIZE_W); a -= 10)
-	{
-		// Draw line horizontally:
-		glBegin(GL_LINES);
-			glVertex3i(-1*(GAME_MAP_ZIZE_W), 0, a);
-			glVertex3i(GAME_MAP_ZIZE_W, 0, a);
-		glEnd();
+	/*
+	   for(int a = GAME_MAP_ZIZE_W; a >= -1*(GAME_MAP_ZIZE_W); a -= 10)
+	   {
+	// Draw line horizontally:
+	glBegin(GL_LINES);
+	glVertex3i(-1*(GAME_MAP_ZIZE_W), 0, a);
+	glVertex3i(GAME_MAP_ZIZE_W, 0, a);
+	glEnd();
 
-		// Draw line vertically
-		glBegin(GL_LINES);
-			glVertex3i(a, 0, GAME_MAP_ZIZE_W);
-			glVertex3i(a, 0, -1*(GAME_MAP_ZIZE_W));
-		glEnd();
+	// Draw line vertically
+	glBegin(GL_LINES);
+	glVertex3i(a, 0, GAME_MAP_ZIZE_W);
+	glVertex3i(a, 0, -1*(GAME_MAP_ZIZE_W));
+	glEnd();
 	}*/
 
-	 //   glPushMatrix();
-	 //   glTranslatef();
-	 //   glPopMatrix();
+	//   glPushMatrix();
+	//   glTranslatef();
+	//   glPopMatrix();
 
 	// Draw grid
-    // Make sure colour ..
-    glColor3f(0.0, 0.0, 0.0);
+	// Make sure colour ..
+	glColor3f(0.0, 0.0, 0.0);
 	glColor3f(0.0, 0.0, 0.0);
 	DrawGrid(GAME_MAP_SIZE_Z, GAME_MAP_SIZE_X, 50);
 
 	// Draw Sectors:
 	glColor3f(1.0, 0.0, 0.0);   // Red colour
 	glPushMatrix();
-        glRotatef(90, 1, 0, 0); // Rotate 90 deg via xaxis, end up parallel to xz plane
-        DrawStencilRect(0, 0, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
-    glPopMatrix();
+	glRotatef(90, 1, 0, 0); // Rotate 90 deg via xaxis, end up parallel to xz plane
+	DrawStencilRect(0, 0, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
+	glPopMatrix();
 
 	glColor3f(1.0, 0.0, 0.0);   // Red colour
 	glPushMatrix();
-        glRotatef(90, 1, 0, 0);
-        DrawStencilRect(GAME_MAP_SIZE_X/2, 0, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
-    glPopMatrix();
+	glRotatef(90, 1, 0, 0);
+	DrawStencilRect(GAME_MAP_SIZE_X/2, 0, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
+	glPopMatrix();
 
-    glColor3f(1.0, 0.0, 0.0);   // Red colour
+	glColor3f(1.0, 0.0, 0.0);   // Red colour
 	glPushMatrix();
-        glRotatef(90, 1, 0, 0);
-        DrawStencilRect(0, GAME_MAP_SIZE_Z/2, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
-    glPopMatrix();
+	glRotatef(90, 1, 0, 0);
+	DrawStencilRect(0, GAME_MAP_SIZE_Z/2, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
+	glPopMatrix();
 
-    glColor3f(1.0, 0.0, 0.0);   // Red colour
+	glColor3f(1.0, 0.0, 0.0);   // Red colour
 	glPushMatrix();
-        glRotatef(90, 1, 0, 0);
-        DrawStencilRect(GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
-    glPopMatrix();
+	glRotatef(90, 1, 0, 0);
+	DrawStencilRect(GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2, GAME_MAP_SIZE_X/2, GAME_MAP_SIZE_Z/2);
+	glPopMatrix();
 
-    // Set colour back to green:
-    glColor3f(1.0, 0.0, 0.0);
+	// Set colour back to green:
+	glColor3f(1.0, 0.0, 0.0);
 }
 
 void setFoodPos(bool isRand, int foodPosX, int foodPosZ)				// Picks random food location
@@ -477,94 +477,92 @@ void display()                               //Main function that will draw.
 
 void passiveMouse(int x, int y)
 {
-	// Set current cursor pos
-	mousePosX = x;
-	mousePosY = y;
+		// Set current cursor pos
+		mousePosX = x;
+		mousePosY = y;
 
-	// Auto rotate:
-	for(int t = 0; t < 4; t++)
-		mousePos[t] = false;
+		// Auto rotate:
+		for(int t = 0; t < 4; t++)
+				mousePos[t] = false;
 
-	// Set mouse pos
-	if(y < 50)															// Extreme top edge
-		mousePos[0] = true;
-    if(x > (WINWidth - 50))												// Extreme right edge
-    	mousePos[1] = true;
-	if(y > (WINHeight - 50))											// Extreme bottom edge
-		mousePos[2] = true;
-	if(x < 50)															// Extreme left edge
-		mousePos[3] = true;
+		// Set mouse pos
+		if(y < 50)															// Extreme top edge
+				mousePos[0] = true;
+		if(x > (WINWidth - 50))												// Extreme right edge
+				mousePos[1] = true;
+		if(y > (WINHeight - 50))											// Extreme bottom edge
+				mousePos[2] = true;
+		if(x < 50)															// Extreme left edge
+				mousePos[3] = true;
 }
 
 void mouse(int button, int state, int x, int y)
 {
-    int mod;
+		int mod;
 
-/*
-    if(SELECT == 1)
-    {
-        if(button != GLUT_LEFT_BUTTON || state != GLUT_DOWN)
-            return;
+		/*
+		   if(SELECT == 1)
+		   {
+		   if(button != GLUT_LEFT_BUTTON || state != GLUT_DOWN)
+		   return;
 
-        // Set:
-        cursorX = x;
-        cursorY = y;
+		// Set:
+		cursorX = x;
+		cursorY = y;
 
-        MainGameMenu.pickStartMenu();                                   // Trigger picking.
-    }
-*/
+		MainGameMenu.pickStartMenu();                                   // Trigger picking.
+		}
+		*/
 
-    if (button == GLUT_RIGHT_BUTTON)
-	{
-		mod = glutGetModifiers();
+		if (button == GLUT_RIGHT_BUTTON)
+		{
+				mod = glutGetModifiers();
 
-		if (state == GLUT_DOWN)
-            {
-                cout << "Right button pressed" << endl;
+				if (state == GLUT_DOWN)
+				{
+						cout << "Right button pressed" << endl;
 
-                if(mod == GLUT_ACTIVE_CTRL)
-                	cout << INS << "mouse click and ctrl";
-                else
-                	cout << INS << "mouse click and no ctrl";
-            }
-            else
-            {
-                cout << "Right button lifted "
-                << "at (" << x << "," << y
-                << ")" << endl;
-            }
-	}
-	else if (button == GLUT_LEFT_BUTTON)
-	{
-		mod = glutGetModifiers();
-		if (state == GLUT_DOWN)
-			{
-			    cout << "Left button pressed" << endl;
+						if(mod == GLUT_ACTIVE_CTRL)
+								cout << INS << "mouse click and ctrl";
+						else
+								cout << INS << "mouse click and no ctrl";
+				}
+				else
+				{
+						cout << "Right button lifted "
+								<< "at (" << x << "," << y
+								<< ")" << endl;
+				}
+		}
+		else if (button == GLUT_LEFT_BUTTON)
+		{
+				mod = glutGetModifiers();
+				if (state == GLUT_DOWN)
+				{
+						cout << "Left button pressed" << endl;
 
-			    if(mod == GLUT_ACTIVE_CTRL)
-                	cout << INS << "mouse click and ctrl";
-                else
-                	cout << INS << "mouse click and no ctrl";
-			}
-		else
-			{
-			    cout << "Left button lifted "
-                << "at (" << x << "," << y
-                << ")" << endl;
-			}
-	}
-	else if (button == GLUT_MIDDLE_BUTTON)
-	{
-	    mod = glutGetModifiers();
+						if(mod == GLUT_ACTIVE_CTRL)
+								cout << INS << "mouse click and ctrl";
+						else
+								cout << INS << "mouse click and no ctrl";
+				}
+				else
+				{
+						cout << "Left button lifted "<< "at (" << x << "," << y	<< ")" << endl;
+				}
+		}
+		else if (button == GLUT_MIDDLE_BUTTON)
+		{
+				mod = glutGetModifiers();
 
-	    if(mod == GLUT_ACTIVE_CTRL)
-			cout << INS << "mouse click and ctrl";
-		else
-			cout << INS << "mouse click and no ctrl";
-	}
+				if(mod == GLUT_ACTIVE_CTRL)
+						cout << INS << "mouse click and ctrl";
+				else
+						cout << INS << "mouse click and no ctrl";
+		}
 
-	cout << "{{X:}}" << x << endl;
-    cout << "{{Y:}}" << y << endl;
+		cout << "{{X:}}" << x << endl;
+		cout << "{{Y:}}" << y << endl;
 }
 
 void resize(int w, int h)

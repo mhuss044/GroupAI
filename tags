@@ -1,0 +1,790 @@
+	curWorkSesh.vim	/^inoremap  u$/;"	m
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+016|	curWorkSesh.vim	/^normal! 016|$/;"	m
+038|	curWorkSesh.vim	/^normal! 038|$/;"	m
+041|	curWorkSesh.vim	/^normal! 041|$/;"	m
+09|	curWorkSesh.vim	/^normal! 09|$/;"	m
+<Plug>NetrwBrowseX	curWorkSesh.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(expand((exists("g:netrw_gx")? g:netrw_gx : '<cfile>')),netrw#CheckIfRemote())$/;"	m
+<Plug>NetrwBrowseXVis	curWorkSesh.vim	/^vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()$/;"	m
+AddPtPoly	Utility.h	/^void AddPtPoly(float Px, float Py, int NumVerts, Vert2x Verts[])$/;"	f
+ArbAxisRotation	CCamera.h	/^void CArbAxisCamera::ArbAxisRotation(float degrees, Vert3xf axis, Vert3xf *V1, Vert3xf *V2)		\/\/ Rotate viewPt and V1\/V2 about axis$/;"	f	class:CArbAxisCamera
+BIG	ENDIAN.H	10;"	d
+Bounds	CommonTypes.h	/^}Bounds;$/;"	t	typeref:struct:_Bounds
+CAMERA_LOOK_DOWN	CCamera.h	/^	CAMERA_LOOK_DOWN,$/;"	e	enum:lookOperations
+CAMERA_LOOK_LEFT	CCamera.h	/^	CAMERA_LOOK_LEFT,$/;"	e	enum:lookOperations
+CAMERA_LOOK_RIGHT	CCamera.h	/^	CAMERA_LOOK_RIGHT,$/;"	e	enum:lookOperations
+CAMERA_LOOK_ROLL_CCWISE	CCamera.h	/^	CAMERA_LOOK_ROLL_CCWISE$/;"	e	enum:lookOperations
+CAMERA_LOOK_ROLL_CWISE	CCamera.h	/^	CAMERA_LOOK_ROLL_CWISE,$/;"	e	enum:lookOperations
+CAMERA_LOOK_UP	CCamera.h	/^	CAMERA_LOOK_UP = 0,$/;"	e	enum:lookOperations
+CAMERA_MOVE_BACKWARD	CCamera.h	/^	CAMERA_MOVE_BACKWARD,$/;"	e	enum:moveDirections
+CAMERA_MOVE_FORWARD	CCamera.h	/^	CAMERA_MOVE_FORWARD = 0,$/;"	e	enum:moveDirections
+CAMERA_MOVE_LEFT	CCamera.h	/^	CAMERA_MOVE_LEFT,$/;"	e	enum:moveDirections
+CAMERA_MOVE_RIGHT	CCamera.h	/^	CAMERA_MOVE_RIGHT$/;"	e	enum:moveDirections
+CAMERA_ROTATE_DEGREES	CCamera.h	37;"	d
+CAMERA_TRANSLATE_SPEED	CCamera.h	36;"	d
+CAMERA_ZOOM	CCamera.h	35;"	d
+CArbAxisCamera	CCamera.h	/^CArbAxisCamera::CArbAxisCamera(float camViewPtX, float camViewPtY, float camViewPtZ, float rotSpeed = CAMERA_ROTATE_DEGREES, float transSpeed = CAMERA_TRANSLATE_SPEED)\/\/ Initialize.$/;"	f	class:CArbAxisCamera
+CArbAxisCamera	CCamera.h	/^class CArbAxisCamera$/;"	c
+CCAMERA_H_	CCamera.h	33;"	d
+CColourCodedSelection	SpaceSelector.h	/^CColourCodedSelection::CColourCodedSelection(void)$/;"	f	class:CColourCodedSelection
+CColourCodedSelection	SpaceSelector.h	/^class CColourCodedSelection$/;"	c
+CColourCodedSelection_map	SpaceSelector.h	/^CColourCodedSelection_map::CColourCodedSelection_map(void)$/;"	f	class:CColourCodedSelection_map
+CColourCodedSelection_map	SpaceSelector.h	/^class CColourCodedSelection_map									\/\/ Colour Coded Selection using <map>$/;"	c
+CCube	MCube.h	/^CCube::CCube(int h = GAME_MAP_SIZE_X\/2, int v = GAME_MAP_SIZE_Z\/2)		\/\/ Set horizontal & vertical spawn pt; spawn mid map$/;"	f	class:CCube
+CCube	MCube.h	/^class CCube$/;"	c
+CCubeBackPack	MCube.h	/^CCubeBackPack::CCubeBackPack(void)$/;"	f	class:CCubeBackPack
+CCubeBackPack	MCube.h	/^class CCubeBackPack													    \/\/ Methods woring with the cubes backpack: addResources, addFood, giveFood,...$/;"	c
+CCubeBodyMind	MCube.h	/^CCubeBodyMind::CCubeBodyMind(void)$/;"	f	class:CCubeBodyMind
+CCubeBodyMind	MCube.h	/^class CCubeBodyMind				    									\/\/ Methods working with physical\/mental?, memory,speed,health$/;"	c
+CCubeGod	MCube.h	/^CCubeGod::CCubeGod(void)$/;"	f	class:CCubeGod
+CCubeGod	MCube.h	/^class CCubeGod															\/\/ Creates and destroys cubes, births\/kills, sends predators, env effects?$/;"	c
+CCubeTribe	MCube.h	/^CCubeTribe::CCubeTribe(void)$/;"	f	class:CCubeTribe
+CCubeTribe	MCube.h	/^class CCubeTribe$/;"	c
+CEndian	ENDIAN.H	/^CEndian::CEndian(void)$/;"	f	class:CEndian
+CEndian	ENDIAN.H	/^class CEndian$/;"	c
+CFLAGS	makefile	/^CFLAGS = -g -Wall -O2 -pthread -std=c++11	# gnu99 in for declarations, c++11 for non static data member initialiazer$/;"	m
+CFixedGUI	CGUI.h	/^CFixedGUI::CFixedGUI(void)$/;"	f	class:CFixedGUI
+CFixedGUI	CGUI.h	/^class CFixedGUI					\/\/ Activated by keypress, selection via mouse$/;"	c
+CFixedPitchCamera	CCamera.h	/^CFixedPitchCamera::CFixedPitchCamera(float camViewPtX, float camViewPtY, float camViewPtZ, float pitchMax, float rotSpeed = CAMERA_ROTATE_DEGREES, float transSpeed = CAMERA_TRANSLATE_SPEED)\/\/ Initialize.$/;"	f	class:CFixedPitchCamera
+CFixedPitchCamera	CCamera.h	/^class CFixedPitchCamera$/;"	c
+CGUIState	CGUI.h	/^CGUIState::CGUIState(void (*sPtr)(void))$/;"	f	class:CGUIState
+CGUIState	CGUI.h	/^CGUIState::CGUIState(void)$/;"	f	class:CGUIState
+CGUIState	CGUI.h	/^class CGUIState								\/\/ Defines a screenful of menues$/;"	c
+CGUIStateNode	CGUI.h	/^CGUIStateNode::CGUIStateNode(CGUIState *GUIStateToAttach, int ID)$/;"	f	class:CGUIStateNode
+CGUIStateNode	CGUI.h	/^CGUIStateNode::CGUIStateNode(void (*sPtr)(void), int ID)$/;"	f	class:CGUIStateNode
+CGUIStateNode	CGUI.h	/^class CGUIStateNode$/;"	c
+CGUISystem	CGUI.h	/^CGUISystem::CGUISystem(int _screenWidth = GUI_ORTHO_WIDTH, int _screenHeight = GUI_ORTHO_HEIGHT, CGUIStateNode *GUIStateHead = NULL)\/\/ Screen size should be even numbers$/;"	f	class:CGUISystem
+CGUISystem	CGUI.h	/^class CGUISystem$/;"	c
+CGUI_H_	CGUI.h	85;"	d
+CHUD	CGUI.h	/^class CHUD						\/\/ Selection via mouse$/;"	c
+CKeyboard	MInput.h	/^CKeyboard::CKeyboard(void)$/;"	f	class:CKeyboard
+CKeyboard	MInput.h	/^class CKeyboard$/;"	c
+CMenu	CGUI.h	/^CMenu::CMenu(MENU_STYLE _menuStyle = MENU_STYLE_ROW_CENTER, const char *headingText = NULL, RGB *rgbPixelArr = NULL, RGBA *rgbaPixelArr = NULL)$/;"	f	class:CMenu
+CMenu	CGUI.h	/^class CMenu																\/\/ Menu which lists items in decending rows$/;"	c
+CMenuItemNode	CGUI.h	/^CMenuItemNode::CMenuItemNode(MENU_ITEM_STYLE itemStyle = MENU_ITEM_RECTANGULAR, const char* itemText = NULL, RGB *rgbPixelArr = NULL, RGBA *rgbaPixelArr = NULL, float itemColourX = GUI_MENU_ITEM_DEFAULT_COLOUR_X, float itemColourY = GUI_MENU_ITEM_DEFAULT_COLOUR_Y, float itemColourZ = GUI_MENU_ITEM_DEFAULT_COLOUR_Z)$/;"	f	class:CMenuItemNode
+CMenuItemNode	CGUI.h	/^class CMenuItemNode$/;"	c
+CMenuNode	CGUI.h	/^CMenuNode::CMenuNode(CMenu *menuToAttach)$/;"	f	class:CMenuNode
+CMenuNode	CGUI.h	/^CMenuNode::CMenuNode(MENU_STYLE menuStyle, const char* headingText)$/;"	f	class:CMenuNode
+CMenuNode	CGUI.h	/^class CMenuNode$/;"	c
+COMMONTYPES_H_	CommonTypes.h	9;"	d
+COMPILER	makefile	/^COMPILER = g++			# compiler specific to file extension, g++ only invoked on .cpp$/;"	m
+CSelectableNode	SpaceSelector.h	/^CSelectableNode::CSelectableNode(void (*drawFunc)(void), const char *chId, float x, float y, float z)$/;"	f	class:CSelectableNode
+CSelectableNode	SpaceSelector.h	/^class CSelectableNode$/;"	c
+CSelection	SpaceSelector.h	/^CSelection::CSelection(void)$/;"	f	class:CSelection
+CSelection	SpaceSelector.h	/^class CSelection$/;"	c
+CTribeFeederNode	MCube.h	/^CTribeFeederNode::CTribeFeederNode(void)$/;"	f	class:CTribeFeederNode
+CTribeFeederNode	MCube.h	/^class CTribeFeederNode$/;"	c
+CTribeMessengerNode	MCube.h	/^CTribeMessengerNode::CTribeMessengerNode(void)$/;"	f	class:CTribeMessengerNode
+CTribeMessengerNode	MCube.h	/^class CTribeMessengerNode$/;"	c
+CTribePredatorNode	MCube.h	/^CTribePredatorNode::CTribePredatorNode(void)$/;"	f	class:CTribePredatorNode
+CTribePredatorNode	MCube.h	/^class CTribePredatorNode$/;"	c
+CUBETYPES	MCube.h	/^enum CUBETYPES$/;"	g
+CUBETYPE_FEEDER_PACKSIZE	MCube.h	95;"	d
+CUBETYPE_FEEDER_PACKSIZE_THRESHOLD	MCube.h	94;"	d
+CUBETYPE_FEEDER_SIGHTRANGE	MCube.h	96;"	d
+CUBETYPE_FORAGER_FOODPACK_THRESHOLD	MCube.h	87;"	d
+CUBETYPE_MESSENGER_CONTACT_THRESHOLD	MCube.h	91;"	d
+CUBETYPE_MESSENGER_SIGHTRANGE	MCube.h	90;"	d
+CUBETYPE_PREDATOR_ATTACK_THRESHOLD	MCube.h	101;"	d
+CUBETYPE_PREDATOR_PACKSIZE	MCube.h	99;"	d
+CUBETYPE_PREDATOR_SIGHTRANGE	MCube.h	100;"	d
+CUBE_ACTIVITY	MCube.h	79;"	d
+CUBE_BACKPACK_FOODLIMIT	MCube.h	83;"	d
+CUBE_BACKPACK_MATERIALLIMIT	MCube.h	84;"	d
+CUBE_LIFE_DECAY	MCube.h	78;"	d
+CUBE_SIGHT_RADIUS	MCube.h	81;"	d
+CUBE_SMELL_SENSITIVITY	MCube.h	80;"	d
+CUBE_STAMINA	MCube.h	82;"	d
+CopyMat	Utility.h	/^void CopyMat(Mat2x MatTofill, Mat2x Source)$/;"	f
+CopyMat	Utility.h	/^void CopyMat(Mat3x MatTofill, Mat3x Source)$/;"	f
+CopyMat	Utility.h	/^void CopyMat(Mat3x4 MatTofill, Mat3x4 Source)$/;"	f
+DegToRad	Utility.h	/^void DegToRad(float *deg)$/;"	f
+Distance2V	Utility.h	/^float Distance2V(Point2x *p1, Point2x *p2)$/;"	f
+Distance2V	Utility.h	/^float Distance2V(Vert2x *p1, Vert2x *p2)$/;"	f
+Distance2V	Utility.h	/^float Distance2V(Vert2xd *p1, Vert2xd *p2)$/;"	f
+Distance2V	Utility.h	/^float Distance2V(Vert2xf *p1, Vert2xf *p2)$/;"	f
+Distance2V	Utility.h	/^float Distance2V(Vert3xd *p1, Vert3xd *p2)$/;"	f
+Distance2V	Utility.h	/^float Distance2V(Vert3xf *p1, Vert3xf *p2)$/;"	f
+Distance2f	Utility.h	/^float Distance2f(float x1, float y1, float x2, float y2)$/;"	f
+Distance3f	Utility.h	/^float Distance3f(float x1, float y1, float z1, float x2, float y2, float z2)$/;"	f
+DrawCube	Utility.h	/^void DrawCube(void)														\/\/ Draw cube$/;"	f
+DrawCubeNoBottom	Utility.h	/^void DrawCubeNoBottom(void)												\/\/ Draw cube without bottom face, performance++$/;"	f
+DrawGrid	Utility.h	/^void DrawGrid(int HEIGHT, int WIDTH, int INCREMENT)		\/\/ Draws a grid$/;"	f
+DrawGridofSquares	Utility.h	/^void DrawGridofSquares(int WIDTH, int DIVISIONS)		\/\/ Draw grid of expanding squares.., looks neato$/;"	f
+DrawPoly2x	Utility.h	/^void DrawPoly2x(int NumVerts, Vert2x Verts[])$/;"	f
+DrawRecPtDim	Utility.h	/^void DrawRecPtDim(int xBottomLeft, int yBottomLeft, int width, int height)     \/\/ Point and dimensions.$/;"	f
+DrawRectanlge	Utility.h	/^void DrawRectanlge(float xLeft, float xRight, float yBottom, float yTop)$/;"	f
+DrawRectanlgeWithInset	Utility.h	/^void DrawRectanlgeWithInset(float xLeft, float xRight, float yBottom, float yTop, float inset)$/;"	f
+DrawSquareCentr	Utility.h	/^void DrawSquareCentr(int CentrX, int CentrY, int SPAN, RGB Colour)		\/\/ Specify center of rectangle, span = 1\/2 width, colour$/;"	f
+DrawStencilRect	Utility.h	/^void DrawStencilRect(int xBottomLeft, int yBottomLeft, int width, int height)    \/\/ Point and dimensions, rect not filled in$/;"	f
+DrawStrings	MFont.h	/^void DrawStrings(int windowWidth, int windowHeight, int viewDist)	\/\/ Changes to ortho, writes fps, back to perspective, place in game loop$/;"	f
+DrawTriangle	Utility.h	/^void DrawTriangle()$/;"	f
+DrawUnitSquare	Utility.h	/^void DrawUnitSquare(void)$/;"	f
+EKeyState	MInput.h	/^enum EKeyState$/;"	g
+ENDIAN_CONV_H_	ENDIAN.H	7;"	d
+EXC	funProj.cpp	30;"	d	file:
+FEEDER	MCube.h	/^	FEEDER$/;"	e	enum:CUBETYPES
+FEEDER_TYPE	MCube.h	/^cubeModifiers FEEDER_TYPE;$/;"	v
+FONT_HEIGHT_IN_PIXELS	MFont.h	34;"	d
+FORAGER	MCube.h	/^	FORAGER = 0,			\/\/ with enums, set val of 1 field, the other fields become set accordingly$/;"	e	enum:CUBETYPES
+FORAGER_TYPE	MCube.h	/^cubeModifiers FORAGER_TYPE;$/;"	v
+Face4x	CommonTypes.h	/^}Face4x;$/;"	t	typeref:struct:_Face4x
+Face4xV	CommonTypes.h	/^}Face4xV;$/;"	t	typeref:struct:_Face4xV
+Fps	MFont.h	/^void Fps(void)$/;"	f
+GAME_MAP_SIZE_X	funProj.cpp	36;"	d	file:
+GAME_MAP_SIZE_Z	funProj.cpp	37;"	d	file:
+GDD	funProj.cpp	31;"	d	file:
+GUIState	CGUI.h	/^	CGUIState *GUIState;$/;"	m	class:CGUIStateNode
+GUIStateNodeID	CGUI.h	/^	int GUIStateNodeID;$/;"	m	class:CGUIStateNode
+GUI_EDGE_PADDING	CGUI.h	98;"	d
+GUI_MENU_COLUMN_FOOTER_X	CGUI.h	119;"	d
+GUI_MENU_COLUMN_FOOTER_Y	CGUI.h	120;"	d
+GUI_MENU_COLUMN_HEADER_X	CGUI.h	117;"	d
+GUI_MENU_COLUMN_HEADER_Y	CGUI.h	118;"	d
+GUI_MENU_COLUMN_HEIGHT_FACTOR	CGUI.h	109;"	d
+GUI_MENU_COLUMN_WIDTH_FACTOR	CGUI.h	108;"	d
+GUI_MENU_INSET_LENGTH	CGUI.h	97;"	d
+GUI_MENU_ITEM_DEFAULT_COLOUR_X	CGUI.h	101;"	d
+GUI_MENU_ITEM_DEFAULT_COLOUR_Y	CGUI.h	102;"	d
+GUI_MENU_ITEM_DEFAULT_COLOUR_Z	CGUI.h	103;"	d
+GUI_MENU_ITEM_PADDING	CGUI.h	99;"	d
+GUI_MENU_ROW_CENTER_X	CGUI.h	111;"	d
+GUI_MENU_ROW_CENTER_Y	CGUI.h	112;"	d
+GUI_MENU_ROW_HEIGHT_FACTOR	CGUI.h	107;"	d
+GUI_MENU_ROW_LEFT_X	CGUI.h	113;"	d
+GUI_MENU_ROW_LEFT_Y	CGUI.h	114;"	d
+GUI_MENU_ROW_RIGHT_X	CGUI.h	115;"	d
+GUI_MENU_ROW_RIGHT_Y	CGUI.h	116;"	d
+GUI_MENU_ROW_WIDTH_FACTOR	CGUI.h	106;"	d
+GUI_MENU_SQUARE_X	CGUI.h	121;"	d
+GUI_MENU_SQUARE_Y	CGUI.h	122;"	d
+GUI_ORTHO_HEIGHT	CGUI.h	95;"	d
+GUI_ORTHO_WIDTH	CGUI.h	94;"	d
+GUI_OrthoHeight	CGUI.h	/^	int GUI_OrthoWidth, GUI_OrthoHeight;$/;"	m	class:CFixedGUI
+GUI_OrthoWidth	CGUI.h	/^	int GUI_OrthoWidth, GUI_OrthoHeight;$/;"	m	class:CFixedGUI
+GUI_STATE_BLOCKING	CGUI.h	/^	GUI_STATE_BLOCKING = 0,			\/\/ pauses runtime, scene never drawn, "new game, save game, quit$/;"	e	enum:GUI_STATE_TYPE
+GUI_STATE_NON_BLOCKING	CGUI.h	/^	GUI_STATE_NON_BLOCKING			\/\/ while runtime; aka ontop of scene, aka HUD$/;"	e	enum:GUI_STATE_TYPE
+GUI_STATE_TYPE	CGUI.h	/^enum GUI_STATE_TYPE$/;"	g
+GameSkyBox	MSkyBox.h	/^GameSkyBox::GameSkyBox(void)					\/\/ setup? loaded skybox images$/;"	f	class:GameSkyBox
+GameSkyBox	MSkyBox.h	/^class GameSkyBox$/;"	c
+INS	funProj.cpp	32;"	d	file:
+InitMat	Utility.h	/^void InitMat(Mat2x mat)$/;"	f
+InitMat	Utility.h	/^void InitMat(Mat3x mat)$/;"	f
+InitMat	Utility.h	/^void InitMat(Mat3x4 mat)$/;"	f
+InitMat3x	Utility.h	/^void InitMat3x(Mat3x mat)$/;"	f
+Key_DOWN	MInput.h	/^	Key_DOWN = true		\/\/ Key is pushed$/;"	e	enum:EKeyState
+Key_UP	MInput.h	/^	Key_UP = false,$/;"	e	enum:EKeyState
+LIBS	makefile	/^LIBS = -lGL -lglut$/;"	m
+LITTLE	ENDIAN.H	9;"	d
+Load_TGA	TGA Loader.h	/^tImageTGA *Load_TGA(const char *strfilename)$/;"	f
+Look	CCamera.h	/^void CArbAxisCamera::Look(lookOperations operation)$/;"	f	class:CArbAxisCamera
+Look	CCamera.h	/^void CFixedPitchCamera::Look(lookOperations operation)$/;"	f	class:CFixedPitchCamera
+MENU_ITEM_CIRCULAR	CGUI.h	/^	MENU_ITEM_CIRCULAR$/;"	e	enum:MENU_ITEM_STYLE
+MENU_ITEM_OVAL	CGUI.h	/^	MENU_ITEM_OVAL,$/;"	e	enum:MENU_ITEM_STYLE
+MENU_ITEM_RECTANGULAR	CGUI.h	/^	MENU_ITEM_RECTANGULAR = 0,		\/\/ RECTANGULAR$/;"	e	enum:MENU_ITEM_STYLE
+MENU_ITEM_STYLE	CGUI.h	/^enum MENU_ITEM_STYLE				\/\/ Different styles to specify; menu item styles$/;"	g
+MENU_STYLE	CGUI.h	/^enum MENU_STYLE						\/\/ Menu styles; ie types of menu layouts$/;"	g
+MENU_STYLE_COLUMN_CENTER	CGUI.h	/^	MENU_STYLE_COLUMN_CENTER,		\/\/ Center screen; Displays items along x-axis$/;"	e	enum:MENU_STYLE
+MENU_STYLE_COLUMN_FOOTER	CGUI.h	/^	MENU_STYLE_COLUMN_FOOTER,		\/\/ Footer area; "$/;"	e	enum:MENU_STYLE
+MENU_STYLE_COLUMN_HEADER	CGUI.h	/^	MENU_STYLE_COLUMN_HEADER,		\/\/ Header area; "$/;"	e	enum:MENU_STYLE
+MENU_STYLE_CUSTOM	CGUI.h	/^	MENU_STYLE_CUSTOM				\/\/ Shape, position, is defined via vbo's$/;"	e	enum:MENU_STYLE
+MENU_STYLE_ROW_CENTER	CGUI.h	/^	MENU_STYLE_ROW_CENTER = 0,		\/\/ Center screen; Displays items along y-axis$/;"	e	enum:MENU_STYLE
+MENU_STYLE_ROW_LEFT	CGUI.h	/^	MENU_STYLE_ROW_LEFT,			\/\/ Left hand side; "$/;"	e	enum:MENU_STYLE
+MENU_STYLE_ROW_RIGHT	CGUI.h	/^	MENU_STYLE_ROW_RIGHT,			\/\/ Right hand side; "$/;"	e	enum:MENU_STYLE
+MENU_STYLE_SQUARE_CENTER	CGUI.h	/^	MENU_STYLE_SQUARE_CENTER,		\/\/ Center screen; Display items in a square orientation$/;"	e	enum:MENU_STYLE
+MENU_STYLE_SQUARE_MOUSE	CGUI.h	/^	MENU_STYLE_SQUARE_MOUSE,		\/\/ Try and orient this menus pos relative to mouse pos; context menu$/;"	e	enum:MENU_STYLE
+MESSENGER	MCube.h	/^	MESSENGER,$/;"	e	enum:CUBETYPES
+MESSENGER_TYPE	MCube.h	/^cubeModifiers MESSENGER_TYPE;$/;"	v
+MFONT_H_	MFont.h	32;"	d
+MINPUT_H_	MInput.h	11;"	d
+MainGameCubeGod	funProj.cpp	/^CCubeGod MainGameCubeGod;                                       \/\/ class creates\/destroys cube list$/;"	v
+MainGameSkyBox	MSkyBox.h	/^}MainGameSkyBox;$/;"	v	typeref:class:GameSkyBox
+MakeArbitraryAxisRotMat3x4	Utility.h	/^void MakeArbitraryAxisRotMat3x4(Mat3x4 mat, float Degrees, float axisX, float axisY, float axisZ)\/\/ Make a rotation matrix using an specific axis$/;"	f
+MakeRotMat	Utility.h	/^void MakeRotMat(Mat2x mat, float Rot)$/;"	f
+MakeRotMat	Utility.h	/^void MakeRotMat(Mat3x mat, float Rot)$/;"	f
+MakeRotMat3x4	Utility.h	/^void MakeRotMat3x4(Mat3x4 mat, float Degrees, int x, int y, int z)      \/\/ ints to specify axis to rotate around.$/;"	f
+Mat2x	CommonTypes.h	/^typedef float Mat2x[2][2];$/;"	t
+Mat3x	CommonTypes.h	/^typedef float Mat3x[3][3];$/;"	t
+Mat3x4	CommonTypes.h	/^typedef float Mat3x4[3][4];                                     \/\/ To be compatible with translation matrices$/;"	t
+MidPointV	Utility.h	/^void MidPointV(float* VArray1[3],float* VArray2[3], float* MidPt[3]) \/\/Pass the array name only. wont work properly otherwise.$/;"	f
+MidPointf	Utility.h	/^void MidPointf(float V1XCoord,float V1YCoord, float V2XCoord, float V2YCoord, float* MidPt[3]) \/\/Pass vertexes, 2 pairs.$/;"	f
+Move	CCamera.h	/^void CArbAxisCamera::Move(moveDirections direction)$/;"	f	class:CArbAxisCamera
+Move	CCamera.h	/^void CFixedPitchCamera::Move(moveDirections direction)$/;"	f	class:CFixedPitchCamera
+MultMat2x	Utility.h	/^void MultMat2x(Mat2x product, Mat2x matrix1, Mat2x matrix2)$/;"	f
+MultMat2x1	Utility.h	/^void MultMat2x1(Vert2x& product,Mat2x matrix, Vert2x& vertex)$/;"	f
+MultMat3x	Utility.h	/^void MultMat3x(Mat3x product, Mat3x matrix1, Mat3x matrix2)$/;"	f
+MultMat3x4xV	Utility.h	/^void MultMat3x4xV(Mat3x4 mat, Vert3xf *vert)$/;"	f
+MultMat3x4xVArr	Utility.h	/^void MultMat3x4xVArr(Mat3x4 mat, Vert3xf vertArr[], int numVerts)$/;"	f
+NUMCUBES	MCube.h	77;"	d
+OBJ	makefile	/^OBJ = #funProj.o $/;"	m
+PI	funProj.cpp	29;"	d	file:
+PREDATOR	MCube.h	/^	PREDATOR,$/;"	e	enum:CUBETYPES
+PROGNAME	makefile	/^PROGNAME = funproj$/;"	m
+Pitch	CCamera.h	/^void CFixedPitchCamera::Pitch(float degrees)									\/\/ Rotate viewPt degrees around camPos$/;"	f	class:CFixedPitchCamera
+Point2x	CommonTypes.h	/^} Point2x;$/;"	t	typeref:struct:_point
+PrintMat	Utility.h	/^void PrintMat(Mat2x mat)$/;"	f
+PrintMat	Utility.h	/^void PrintMat(Mat3x mat)$/;"	f
+PrintMat	Utility.h	/^void PrintMat(Mat3x4 mat)$/;"	f
+Q	curWorkSesh.vim	/^map Q gq$/;"	m
+RGB	CommonTypes.h	/^typedef float RGB[3];$/;"	t
+RGBA	CommonTypes.h	/^typedef float RGBA[4];$/;"	t
+RadToDeg	Utility.h	/^void RadToDeg(float *rad)$/;"	f
+Roll	CCamera.h	/^void CFixedPitchCamera::Roll(float degrees)										\/\/ Rotate viewPt degrees around camPos$/;"	f	class:CFixedPitchCamera
+RotAboutRightVec	CCamera.h	/^void CFixedPitchCamera::RotAboutRightVec(float degrees)							\/\/ Rotate about right vector, proper nodding effect$/;"	f	class:CFixedPitchCamera
+RotatePoly2x	Utility.h	/^void RotatePoly2x(float Degrees, int NumVerts, Vert2x Verts[])$/;"	f
+RotatePolyPt	Utility.h	/^void RotatePolyPt(float Px, float Py, float Degrees, int NumVerts, Vert2x Verts[])$/;"	f
+Round	Utility.h	/^float Round(const float &number, const int num_digits)  \/\/Got this from: http:\/\/www.codeproject.com\/cpp\/ffile:\/\/\/C:\/Users\/EvorateAwMaDemCriAnR\/Documents\/Programming%20Work\/Modern%20GL%20Tutorial%200.3.7\/Tutorial%200.3.7\/html\/Positioning\/AngleAxisRotationMatrix.svgloatutils.asp$/;"	f
+SELECTION_BACKWARD	SpaceSelector.h	/^	SELECTION_BACKWARD,$/;"	e	enum:SELECT_MOVE_DIR
+SELECTION_FORWARD	SpaceSelector.h	/^	SELECTION_FORWARD = 0,$/;"	e	enum:SELECT_MOVE_DIR
+SELECTION_LEFT	SpaceSelector.h	/^	SELECTION_LEFT,$/;"	e	enum:SELECT_MOVE_DIR
+SELECTION_RIGHT	SpaceSelector.h	/^	SELECTION_RIGHT$/;"	e	enum:SELECT_MOVE_DIR
+SELECT_MOVE_DIR	SpaceSelector.h	/^enum SELECT_MOVE_DIR$/;"	g
+SHADE	funProj.cpp	/^int SHADE = 0, gameFoodLocZ, gameFoodLocX, gameMaterialLocX, gameMaterialLocZ;\/\/ global food location var$/;"	v
+SPACESELECTOR_H_	SpaceSelector.h	85;"	d
+SRC	makefile	/^SRC =  funProj.cpp #-I\/usr\/local\/include\/gl$/;"	m
+SessionLoad	curWorkSesh.vim	/^let SessionLoad = 1$/;"	v
+Shutdown	funProj.cpp	/^void Shutdown()$/;"	f
+SubtractPtPoly	Utility.h	/^void SubtractPtPoly(float Px, float Py, int NumVerts, Vert2x Verts[])$/;"	f
+TGA_A	TGA Loader.h	18;"	d
+TGA_RGB	TGA Loader.h	17;"	d
+TGA_RLE	TGA Loader.h	19;"	d
+TGA_Texture	TGA Loader.h	/^GLuint TGA_Texture(char *strFileName)$/;"	f
+TRIBE_MAXMEMBERS	MCube.h	105;"	d
+TRIBE_NUMTRIBES	MCube.h	104;"	d
+TRIBE_TERRITORY_RADIUS	MCube.h	106;"	d
+TranslatePolyV2x	Utility.h	/^void TranslatePolyV2x(float xTrans, float yTrans, int NumVerts, Vert2x Verts[])$/;"	f
+TranslateV1x	Utility.h	/^void TranslateV1x(float xTrans, float yTrans, Vert2x& vertex)$/;"	f
+UTILITY_H_	Utility.h	12;"	d
+VIEW_DISTANCE	funProj.cpp	35;"	d	file:
+Vec2d	CommonTypes.h	/^}Vec2d;$/;"	t	typeref:struct:Vector2d
+Vec3d	CommonTypes.h	/^}Vec3d;$/;"	t	typeref:struct:Vector3d
+Vec3f	CommonTypes.h	/^}Vec3f;$/;"	t	typeref:struct:Vector3f
+Vector2d	CommonTypes.h	/^typedef struct Vector2d$/;"	s
+Vector3d	CommonTypes.h	/^typedef struct Vector3d$/;"	s
+Vector3f	CommonTypes.h	/^typedef struct Vector3f$/;"	s
+Vert2x	CommonTypes.h	/^}Vert2x;$/;"	t	typeref:struct:_Vert2x
+Vert2xd	CommonTypes.h	/^}Vert2xd;$/;"	t	typeref:struct:_Vert2xd
+Vert2xf	CommonTypes.h	/^}Vert2xf;$/;"	t	typeref:struct:_Vert2xf
+Vert3xd	CommonTypes.h	/^}Vert3xd;$/;"	t	typeref:struct:_Vert3xd
+Vert3xf	CommonTypes.h	/^}Vert3xf;$/;"	t	typeref:struct:_Vert3xf
+WARRIOR_TYPE	MCube.h	/^cubeModifiers WARRIOR_TYPE;$/;"	v
+WINHeight	funProj.cpp	34;"	d	file:
+WINWidth	funProj.cpp	33;"	d	file:
+WaitForQSec	MTiming.h	/^void WaitForQSec(float qsecs)$/;"	f
+WaitForSecs	MTiming.h	/^void WaitForSecs(int secs)$/;"	f
+Yaw	CCamera.h	/^void CFixedPitchCamera::Yaw(float degrees)										\/\/ Rotate viewPt degrees around camPos$/;"	f	class:CFixedPitchCamera
+ZeroVard	Utility.h	/^void ZeroVard(int &var, int condition)	                        \/\/'Vard': variable, integer$/;"	f
+["	curWorkSesh.vim	/^nnoremap <buffer> <silent> [" :call search('\\%(^\\s*".*\\n\\)\\%(^\\s*"\\)\\@!', "bW")$/;"	m
+["	curWorkSesh.vim	/^vnoremap <buffer> <silent> [" :exe "normal! gv"|call search('\\%(^\\s*".*\\n\\)\\%(^\\s*"\\)\\@!', "bW")$/;"	m
+[[	curWorkSesh.vim	/^nnoremap <buffer> <silent> [[ m':call search('^\\s*fu\\%[nction]\\>', "bW")$/;"	m
+[[	curWorkSesh.vim	/^vnoremap <buffer> <silent> [[ m':exe "normal! gv"|call search('^\\s*fu\\%[nction]\\>', "bW")$/;"	m
+[]	curWorkSesh.vim	/^nnoremap <buffer> <silent> [] m':call search('^\\s*endf*\\%[unction]\\>', "bW")$/;"	m
+[]	curWorkSesh.vim	/^vnoremap <buffer> <silent> [] m':exe "normal! gv"|call search('^\\s*endf*\\%[unction]\\>', "bW")$/;"	m
+]"	curWorkSesh.vim	/^nnoremap <buffer> <silent> ]" :call search('^\\(\\s*".*\\n\\)\\@<!\\(\\s*"\\)', "W")$/;"	m
+]"	curWorkSesh.vim	/^vnoremap <buffer> <silent> ]" :exe "normal! gv"|call search('^\\(\\s*".*\\n\\)\\@<!\\(\\s*"\\)', "W")$/;"	m
+][	curWorkSesh.vim	/^nnoremap <buffer> <silent> ][ m':call search('^\\s*endf*\\%[unction]\\>', "W")$/;"	m
+][	curWorkSesh.vim	/^vnoremap <buffer> <silent> ][ m':exe "normal! gv"|call search('^\\s*endf*\\%[unction]\\>', "W")$/;"	m
+]]	curWorkSesh.vim	/^nnoremap <buffer> <silent> ]] m':call search('^\\s*fu\\%[nction]\\>', "W")$/;"	m
+]]	curWorkSesh.vim	/^vnoremap <buffer> <silent> ]] m':exe "normal! gv"|call search('^\\s*fu\\%[nction]\\>', "W")$/;"	m
+_Bounds	CommonTypes.h	/^typedef struct _Bounds$/;"	s
+_Face4x	CommonTypes.h	/^typedef struct _Face4x				   \/\/Type to hold faces.$/;"	s
+_Face4xV	CommonTypes.h	/^typedef struct _Face4xV				   \/\/A three vertice face. For triangular faces.$/;"	s
+_Vert2x	CommonTypes.h	/^typedef struct _Vert2x$/;"	s
+_Vert2xd	CommonTypes.h	/^typedef struct _Vert2xd				                            \/\/Vertex 2x: 2D, d: integer$/;"	s
+_Vert2xf	CommonTypes.h	/^typedef struct _Vert2xf$/;"	s
+_Vert3xd	CommonTypes.h	/^typedef struct _Vert3xd$/;"	s
+_Vert3xf	CommonTypes.h	/^typedef struct _Vert3xf$/;"	s
+_cubeModifiers	MCube.h	/^	_cubeModifiers()$/;"	f	struct:_cubeModifiers
+_cubeModifiers	MCube.h	/^typedef struct _cubeModifiers$/;"	s
+_drawableObj	CommonTypes.h	/^	_drawableObj(void)$/;"	f	struct:_drawableObj
+_drawableObj	CommonTypes.h	/^typedef struct _drawableObj$/;"	s
+_menuTransform	CGUI.h	/^typedef struct _menuTransform$/;"	s
+_mouseEvent	MInput.h	/^	_mouseEvent(void)$/;"	f	struct:_mouseEvent
+_mouseEvent	MInput.h	/^typedef struct _mouseEvent$/;"	s
+_point	CommonTypes.h	/^typedef struct _point$/;"	s
+_selectableMapData	SpaceSelector.h	/^	_selectableMapData(void)$/;"	f	struct:_selectableMapData
+_selectableMapData	SpaceSelector.h	/^typedef struct _selectableMapData$/;"	s
+_tribeToCubeInfo	MCube.h	/^	_tribeToCubeInfo()$/;"	f	struct:_tribeToCubeInfo
+_tribeToCubeInfo	MCube.h	/^typedef struct _tribeToCubeInfo$/;"	s
+_vertexList	CommonTypes.h	/^	_vertexList(void)$/;"	f	struct:_vertexList
+_vertexList	CommonTypes.h	/^typedef struct _vertexList				\/\/ Holds a list of verticies, texture coordinates, and colour values$/;"	s
+a	funProj.cpp	/^char a;$/;"	v
+a1	CommonTypes.h	/^	int a1[2], b2[2], c3[2], d4[2];	   \/\/The elements are individual verticies,$/;"	m	struct:_Face4x
+addFood	MCube.h	/^void CCubeBackPack::addFood(int howMuchFood, int backPackSizeMod = 0)$/;"	f	class:CCubeBackPack
+addGUIState	CGUI.h	/^int CGUISystem::addGUIState(CGUIState *GUIState)$/;"	f	class:CGUISystem
+addMaterial	MCube.h	/^void CCubeBackPack::addMaterial(int howMuchMaterial, int backPackSizeMod = 0)$/;"	f	class:CCubeBackPack
+addMenu	CGUI.h	/^void CGUIState::addMenu(CMenu *menuToAdd)$/;"	f	class:CGUIState
+addMenuItem	CGUI.h	/^void CMenu::addMenuItem(MENU_ITEM_STYLE style, const char* text, char responseKey, void (*callback)(void), int stateToSet)		\/\/ No default vals for callback\/stateToSet bcs make sure user implements taking both paths into consideration$/;"	f	class:CMenu
+addToCollectiveFood	MCube.h	/^void CCubeTribe::addToCollectiveFood(int howMuchFood)$/;"	f	class:CCubeTribe
+addToCollectiveMaterial	MCube.h	/^void CCubeTribe::addToCollectiveMaterial(int howMuchMaterial)$/;"	f	class:CCubeTribe
+addToSelectablesList	SpaceSelector.h	/^bool CColourCodedSelection::addToSelectablesList(void (*drawFunc)(void), const char *name)		\/\/ Add node to list$/;"	f	class:CColourCodedSelection
+addToSelectablesList	SpaceSelector.h	/^void CColourCodedSelection_map::addToSelectablesList(void (*drawFunc)(void), void (*callBack)(void))\/\/ Add node to list$/;"	f	class:CColourCodedSelection_map
+affiliatedTribeID	MCube.h	/^	int affiliatedTribeID, tribeMemberNum, sectorID;					\/\/ Current tribe, tribe member number, current sector$/;"	m	class:cubeNode
+attachEscMenu	CGUI.h	/^void CFixedGUI::attachEscMenu(CMenu *attachMenu)$/;"	f	class:CFixedGUI
+attachFooterMenu	CGUI.h	/^void CFixedGUI::attachFooterMenu(CMenu *attachMenu)$/;"	f	class:CFixedGUI
+attachHeaderMenu	CGUI.h	/^void CFixedGUI::attachHeaderMenu(CMenu *attachMenu)$/;"	f	class:CFixedGUI
+attachLeftMenu	CGUI.h	/^void CFixedGUI::attachLeftMenu(CMenu *attachMenu)$/;"	f	class:CFixedGUI
+attachRightMenu	CGUI.h	/^void CFixedGUI::attachRightMenu(CMenu *attachMenu)$/;"	f	class:CFixedGUI
+attachSquareMenu	CGUI.h	/^void CFixedGUI::attachSquareMenu(CMenu *attachMenu)$/;"	f	class:CFixedGUI
+b2	CommonTypes.h	/^	int a1[2], b2[2], c3[2], d4[2];	   \/\/The elements are individual verticies,$/;"	m	struct:_Face4x
+byteArrayToDouble	ENDIAN.H	/^double CEndian::byteArrayToDouble(unsigned char *arr, unsigned int bytes, int type)$/;"	f	class:CEndian
+byteArrayToInt	ENDIAN.H	/^int CEndian::byteArrayToInt(unsigned char *arr, unsigned int bytes, int type)$/;"	f	class:CEndian
+byteArrayToShort	ENDIAN.H	/^short CEndian::byteArrayToShort(unsigned char *arr, unsigned int bytes, int type)$/;"	f	class:CEndian
+byteArrayToUInt	ENDIAN.H	/^unsigned int CEndian::byteArrayToUInt(unsigned char *arr, unsigned int bytes, int type)$/;"	f	class:CEndian
+byteArrayToUShort	ENDIAN.H	/^unsigned short CEndian::byteArrayToUShort(unsigned char *arr, unsigned int bytes, int type)$/;"	f	class:CEndian
+c3	CommonTypes.h	/^	int a1[2], b2[2], c3[2], d4[2];	   \/\/The elements are individual verticies,$/;"	m	struct:_Face4x
+callBack	SpaceSelector.h	/^	void (*callBack)(void);$/;"	m	class:selectableData
+callBackFromPixel	CGUI.h	/^void CGUISystem::callBackFromPixel(float *pixel, CMenuNode *tempMenuNode)\/\/ Check colour codes and callback$/;"	f	class:CGUISystem
+camForwardVec	CCamera.h	/^    Vert3xf camForwardVec, camRightVec, camUpVec;	\/\/ Vector added to camPos when translate pos, rotated when ever rotate viewing window (mouse, arrow keys)$/;"	m	class:CArbAxisCamera
+camForwardVec	CCamera.h	/^    Vert3xf camForwardVec, camRightVec, camUpVec;	\/\/ Vector added to camPos when translate pos, rotated when ever rotate viewing window (mouse, arrow keys)$/;"	m	class:CFixedPitchCamera
+camPitch	CCamera.h	/^    Mat3x4 camPitch, camYaw, camRoll;				\/\/ Matrices holding rotation of 1 deg in each respective axis; mult by pos\/viewpt vectors to rotate view window$/;"	m	class:CFixedPitchCamera
+camPos	CCamera.h	/^	Vert3xf camPos, viewPt;							\/\/ viewPt; point at which cam rotates around, cam looks at$/;"	m	class:CArbAxisCamera
+camPos	CCamera.h	/^    Vert3xf camPos, viewPt;							\/\/ viewPt; point at which cam rotates around, cam looks at$/;"	m	class:CFixedPitchCamera
+camRightVec	CCamera.h	/^    Vert3xf camForwardVec, camRightVec, camUpVec;	\/\/ Vector added to camPos when translate pos, rotated when ever rotate viewing window (mouse, arrow keys)$/;"	m	class:CArbAxisCamera
+camRightVec	CCamera.h	/^    Vert3xf camForwardVec, camRightVec, camUpVec;	\/\/ Vector added to camPos when translate pos, rotated when ever rotate viewing window (mouse, arrow keys)$/;"	m	class:CFixedPitchCamera
+camRoll	CCamera.h	/^    Mat3x4 camPitch, camYaw, camRoll;				\/\/ Matrices holding rotation of 1 deg in each respective axis; mult by pos\/viewpt vectors to rotate view window$/;"	m	class:CFixedPitchCamera
+camUpVec	CCamera.h	/^    Vert3xf camForwardVec, camRightVec, camUpVec;	\/\/ Vector added to camPos when translate pos, rotated when ever rotate viewing window (mouse, arrow keys)$/;"	m	class:CArbAxisCamera
+camUpVec	CCamera.h	/^    Vert3xf camForwardVec, camRightVec, camUpVec;	\/\/ Vector added to camPos when translate pos, rotated when ever rotate viewing window (mouse, arrow keys)$/;"	m	class:CFixedPitchCamera
+camYaw	CCamera.h	/^    Mat3x4 camPitch, camYaw, camRoll;				\/\/ Matrices holding rotation of 1 deg in each respective axis; mult by pos\/viewpt vectors to rotate view window$/;"	m	class:CFixedPitchCamera
+carryOutMove	MCube.h	/^void CCube::carryOutMove(void)                                      \/\/ Cube moves along path; increments position vector$/;"	f	class:CCube
+channels	TGA Loader.h	/^	int channels;$/;"	m	struct:tImageTGA
+checkFoodMemory	MCube.h	/^void CCubeBodyMind::checkFoodMemory(void)	\/\/ This way cube verifies data, its not cheating, bcs how else would cube know food is there when its actually travelled there>?$/;"	f	class:CCubeBodyMind
+checkMaterialMemory	MCube.h	/^void CCubeBodyMind::checkMaterialMemory(void)$/;"	f	class:CCubeBodyMind
+childNeg	MCube.h	/^	cubeNodeBSTNode *parentPos, *childNeg, *rightPos, *leftNeg;$/;"	m	class:cubeNodeBSTNode
+cnfg	CommonTypes.h	/^	char cnfg;						   \/\/cnfg: either P: polygon, or T: triangle. (its the face type)$/;"	m	struct:_Face4x
+collectiveFood	MCube.h	/^    int collectiveFood, collectiveMaterial;                            \/\/ Resources gathered from all member cubes$/;"	m	class:CCubeTribe
+collectiveMaterial	MCube.h	/^    int collectiveFood, collectiveMaterial;                            \/\/ Resources gathered from all member cubes$/;"	m	class:CCubeTribe
+colour	SpaceSelector.h	/^	Vert3xf colour;$/;"	m	class:CSelectableNode
+colourCode	SpaceSelector.h	/^	Vert3xf colourCode;$/;"	m	class:selectableData
+colourValVerts	CommonTypes.h	/^	int *triFaceVerts, *quadFaceVerts, *textureCoordVerts, *colourValVerts;		\/\/ Index values to verticies in list$/;"	m	struct:_drawableObj
+colourValueList	CommonTypes.h	/^	float *vertexList, *textureCoordList, *colourValueList;$/;"	m	struct:_vertexList
+componentToIncrement	SpaceSelector.h	/^	int componentToIncrement;									\/\/ either 0, 1, 2 corresponding to x, y, z in lastColour$/;"	m	class:CColourCodedSelection
+componentToIncrement	SpaceSelector.h	/^	int componentToIncrement;									\/\/ either 0, 1, 2 corresponding to x, y, z in lastColour$/;"	m	class:CColourCodedSelection_map
+consensusFoodPosUpdate	MCube.h	/^void CCubeTribe::consensusFoodPosUpdate(int foodPosX, int foodPosZ)  \/\/ Move foodPosConsensus closer to actual value$/;"	f	class:CCubeTribe
+consensusMaterialPosUpdate	MCube.h	/^void CCubeTribe::consensusMaterialPosUpdate(int materialPosX, int materialPosZ)  \/\/ Move tribeMaterialPosConsensus closer to actual value$/;"	f	class:CCubeTribe
+containedCubeNode	MCube.h	/^	cubeNode *containedCubeNode;$/;"	m	class:cubeNodeBSTNode
+convertBigToLittle	ENDIAN.H	/^double CEndian::convertBigToLittle(double num)$/;"	f	class:CEndian
+convertBigToLittle	ENDIAN.H	/^int CEndian::convertBigToLittle(int num)$/;"	f	class:CEndian
+convertBigToLittle	ENDIAN.H	/^short CEndian::convertBigToLittle(short num)$/;"	f	class:CEndian
+convertBigToLittle	ENDIAN.H	/^unsigned int CEndian::convertBigToLittle(unsigned int num)$/;"	f	class:CEndian
+convertBigToLittle	ENDIAN.H	/^unsigned short CEndian::convertBigToLittle(unsigned short num)$/;"	f	class:CEndian
+convertLittleToBig	ENDIAN.H	/^double CEndian::convertLittleToBig(double num)$/;"	f	class:CEndian
+convertLittleToBig	ENDIAN.H	/^int CEndian::convertLittleToBig(int num)$/;"	f	class:CEndian
+convertLittleToBig	ENDIAN.H	/^short CEndian::convertLittleToBig(short num)$/;"	f	class:CEndian
+convertLittleToBig	ENDIAN.H	/^unsigned int CEndian::convertLittleToBig(unsigned int num)$/;"	f	class:CEndian
+convertLittleToBig	ENDIAN.H	/^unsigned short CEndian::convertLittleToBig(unsigned short num)$/;"	f	class:CEndian
+copyFromFrontWriteToFront	SpaceSelector.h	/^void copyFromFrontWriteToFront(void)		\/\/ go to front buffer, bottom left; 0,0; read 500x500, write to 0,0 when go ortho$/;"	f
+createCubes	MCube.h	/^void CCubeGod::createCubes(int numCubes)	\/\/ Can probably optimize this..., like have to find tail of list evry time? rly?$/;"	f	class:CCubeGod
+crossProduct3V	Utility.h	/^void crossProduct3V(Vert3xf v1, Vert3xf v2, Vert3xf v3, Vert3xf *crossProduct)$/;"	f
+cube	MCube.h	/^	CCube cube;															\/\/ Tribe cube is affiliated with$/;"	m	class:cubeNode
+cubeColour	MCube.h	/^	GLfloat cubeColour[3], tribeColour[3];$/;"	m	class:CCubeBodyMind
+cubeLife	MCube.h	/^	int cubeLife;$/;"	m	class:CCubeBodyMind
+cubeLifeCycle	MCube.h	/^void CCube::cubeLifeCycle(void)											\/\/ Stuff that happens to cube every cycle$/;"	f	class:CCube
+cubeLifeCycleandRender	MCube.h	/^void CCubeGod::cubeLifeCycleandRender(void)										\/\/ Draw, and run life cycle for all cubes$/;"	f	class:CCubeGod
+cubeModifiers	MCube.h	/^}cubeModifiers;$/;"	t	typeref:struct:_cubeModifiers
+cubeMods	MCube.h	/^	cubeModifiers cubeMods;$/;"	m	class:CCubeBodyMind
+cubeNode	MCube.h	/^class cubeNode$/;"	c
+cubeNode	MCube.h	/^cubeNode::cubeNode(void)												\/\/ pt to nothing so can be sure when compare if pts to obj$/;"	f	class:cubeNode
+cubeNodeBSTNode	MCube.h	/^class cubeNodeBSTNode$/;"	c
+cubeNodeBSTNode	MCube.h	/^cubeNodeBSTNode::cubeNodeBSTNode(void)$/;"	f	class:cubeNodeBSTNode
+cubeSectorXZ	MCube.h	/^    Vec2d cubeSectorXZ, prevCubeSectorXZ;								\/\/ e1 = X, e2 = Z: possible vals: -1, 1$/;"	m	class:CCube
+cubeType	MCube.h	/^    CUBETYPES cubeType;$/;"	m	class:CCube
+cubesBackPack	MCube.h	/^    CCubeBackPack cubesBackPack;                                        \/\/ Methods working on the contents of cubesBackPack, privately holds food\/resource stores$/;"	m	class:CCube
+cubesBodyMind	MCube.h	/^    CCubeBodyMind cubesBodyMind;										\/\/ Methods which makeup a cubes body\/mind$/;"	m	class:CCube
+cubesTribeInfo	MCube.h	/^}cubesTribeInfo;$/;"	t	typeref:struct:_tribeToCubeInfo
+currentGUIStateNode	CGUI.h	/^	CGUIStateNode *guiStateNodeHead, *currentGUIStateNode;$/;"	m	class:CGUISystem
+currentID	CGUI.h	/^	int currentID, screenWidth, screenHeight, menuScaleFactor, menuItemScaleFactor;$/;"	m	class:CGUISystem
+currentTime	MTiming.h	/^char* currentTime(char *specifiers = "%b %d, %Y; %Hh:%Mm:%Ss")          \/\/ Usually: "%b %d, %Y; %H:%M:%S\\n"$/;"	f
+cursorX	funProj.cpp	/^int cursorX = 0, cursorY = 0;$/;"	v
+cursorY	funProj.cpp	/^int cursorX = 0, cursorY = 0;$/;"	v
+d4	CommonTypes.h	/^	int a1[2], b2[2], c3[2], d4[2];	   \/\/The elements are individual verticies,$/;"	m	struct:_Face4x
+data	TGA Loader.h	/^	unsigned char *data;$/;"	m	struct:tImageTGA
+decNextPath	MCube.h	/^void CCube::decNextPath(void)											\/\/ Picks next position, or edits position$/;"	f	class:CCube
+decToGo	MCube.h	/^bool CCube::decToGo(void)												\/\/ Move or not?$/;"	f	class:CCube
+decreaseLife	MCube.h	/^void CCubeBodyMind::decreaseLife(void)									\/\/ Called every step.$/;"	f	class:CCubeBodyMind
+defaultColumnCenterMenuBackdrop	CGUI.h	/^void defaultColumnCenterMenuBackdrop(int screenWidth, int screenHeight)$/;"	f
+defaultRowCenterMenuBackdrop	CGUI.h	/^void defaultRowCenterMenuBackdrop(int screenWidth, int screenHeight)$/;"	f
+defaultRowLeftMenuBackdrop	CGUI.h	/^void defaultRowLeftMenuBackdrop(int screenWidth, int screenHeight)$/;"	f
+defaultRowRightMenuBackdrop	CGUI.h	/^void defaultRowRightMenuBackdrop(int screenWidth, int screenHeight)$/;"	f
+defaultSquareMenuBackdrop	CGUI.h	/^void defaultSquareMenuBackdrop(void)$/;"	f
+deleteCubes	MCube.h	/^void CCubeGod::deleteCubes(void)$/;"	f	class:CCubeGod
+deleteGUIStateNodes	CGUI.h	/^void CGUISystem::deleteGUIStateNodes(void)$/;"	f	class:CGUISystem
+deleteMenuItemsList	CGUI.h	/^void CMenu::deleteMenuItemsList(void)$/;"	f	class:CMenu
+deleteMenuNodeList	CGUI.h	/^void CGUIState::deleteMenuNodeList(void)$/;"	f	class:CGUIState
+deleteSelectablesList	SpaceSelector.h	/^void CColourCodedSelection::deleteSelectablesList(void)			\/\/ Run through, delete all nodes$/;"	f	class:CColourCodedSelection
+deleteSkyBox	MSkyBox.h	/^void GameSkyBox::deleteSkyBox(void)				\/\/ think this recycles tex ids????$/;"	f	class:GameSkyBox
+deregisterCube	MCube.h	/^void CCubeGod::deregisterCube(cubeNode *cubeNodeToDeregister)$/;"	f	class:CCubeGod
+desireRecruits	MCube.h	/^bool CCubeTribe::desireRecruits(void)$/;"	f	class:CCubeTribe
+desireSectorChange	MCube.h	/^bool CCube::desireSectorChange(void)								\/\/ Sets sector vals, so reduce compute times for certain ops$/;"	f	class:CCube
+det	SpaceSelector.h	/^void det( GLdouble *winVerts)$/;"	f
+detectColour	SpaceSelector.h	/^void detectColour(void)		\/\/ read from frontbuf into float arr, draw float arr into backbuf at raster pos$/;"	f
+detectSelection2D	SpaceSelector.h	/^void CColourCodedSelection::detectSelection2D(int mouseX, int mouseY, int OrthoWidth, int OrthoHeight, int windowWidth, int windowHeight)$/;"	f	class:CColourCodedSelection
+detectSelection2D	SpaceSelector.h	/^void CColourCodedSelection_map::detectSelection2D(int mouseX, int mouseY, int OrthoWidth, int OrthoHeight)$/;"	f	class:CColourCodedSelection_map
+detectSelection3D	SpaceSelector.h	/^void CColourCodedSelection::detectSelection3D(int mouseX, int mouseY, Vert3xf *camPos, Vert3xf *viewPt)$/;"	f	class:CColourCodedSelection
+disp	MCube.h	/^	Vec2d disp;															\/\/ Displacement: e1: X(mapwidth), e2: Z(mapheight)$/;"	m	class:CCube
+display	funProj.cpp	/^void display()                               \/\/Main function that will draw.$/;"	f
+dotProduct	Utility.h	/^float dotProduct(Vert3xf vec1, Vert3xf vec2)		\/\/ Two vectors, returns real number$/;"	f
+doubleToByteArray	ENDIAN.H	/^void CEndian::doubleToByteArray(double num, int bytes, unsigned char *arr, int type)$/;"	f	class:CEndian
+drawColourCodedSelectables	SpaceSelector.h	/^void CColourCodedSelection::drawColourCodedSelectables(void)	\/\/ Add node to list$/;"	f	class:CColourCodedSelection
+drawColourCodedSelectables	SpaceSelector.h	/^void CColourCodedSelection_map::drawColourCodedSelectables(void)$/;"	f	class:CColourCodedSelection_map
+drawEnvironment	funProj.cpp	/^void drawEnvironment(void)													\/\/ Costs approx 350 fps$/;"	f
+drawFunc	SpaceSelector.h	/^	void (*drawFunc)(void), (*callBack)(void);$/;"	m	struct:_selectableMapData
+drawGUI	CGUI.h	/^void CFixedGUI::drawGUI(void)			\/\/ Return the current GUI state so app knows what is appropriate to draw afterwards$/;"	f	class:CFixedGUI
+drawGameResources	funProj.cpp	/^void drawGameResources(void)									\/\/ fps cost?$/;"	f
+drawPath	MCube.h	/^void CCube::drawPath(int lengthToDraw)                               \/\/ Draws cubes chosen path up to lengthToDraw units, 10, 20, 30$/;"	f	class:CCube
+drawScene	CGUI.h	/^void CGUIState::drawScene(void)$/;"	f	class:CGUIState
+drawableObj	CommonTypes.h	/^}drawableObj;$/;"	t	typeref:struct:_drawableObj
+drawingFunc	SpaceSelector.h	/^	void (*drawingFunc)(void);		\/\/ Func ptr to drawing func of selectable; FUNC MUST; not have colour operations, completely transform vertices to world coords$/;"	m	class:CSelectableNode
+e1	CommonTypes.h	/^	float e1, e2, e3;		                                    \/\/Elements 1, 2, 3$/;"	m	struct:Vector3f
+e1	CommonTypes.h	/^	int e1, e2, e3;		     	                                \/\/Elements 1, 2, 3$/;"	m	struct:Vector3d
+e1	CommonTypes.h	/^	int e1, e2;			                                    	\/\/Elements 1, 2$/;"	m	struct:Vector2d
+e2	CommonTypes.h	/^	float e1, e2, e3;		                                    \/\/Elements 1, 2, 3$/;"	m	struct:Vector3f
+e2	CommonTypes.h	/^	int e1, e2, e3;		     	                                \/\/Elements 1, 2, 3$/;"	m	struct:Vector3d
+e2	CommonTypes.h	/^	int e1, e2;			                                    	\/\/Elements 1, 2$/;"	m	struct:Vector2d
+e3	CommonTypes.h	/^	float e1, e2, e3;		                                    \/\/Elements 1, 2, 3$/;"	m	struct:Vector3f
+e3	CommonTypes.h	/^	int e1, e2, e3;		     	                                \/\/Elements 1, 2, 3$/;"	m	struct:Vector3d
+eat	MCube.h	/^void CCubeBodyMind::eat(int howMuchToEat)								\/\/ Called when food is found, and loc needs to be recorded.$/;"	f	class:CCubeBodyMind
+editMem	MCube.h	/^void CCubeBodyMind::editMem(int x, int z)								\/\/ Called when food is found, and loc needs to be recorded.$/;"	f	class:CCubeBodyMind
+editSkyboxScaleFac	MSkyBox.h	/^void GameSkyBox::editSkyboxScaleFac(int editScaleFac)	\/\/ value to scale skybox, allows adjustable viewdist$/;"	f	class:GameSkyBox
+endianConverter	ENDIAN.H	/^} endianConverter;$/;"	v	typeref:class:CEndian
+enterOrthographic	Utility.h	/^void enterOrthographic(float xMin, float xMax, float yMin, float yMax, float zMin, float zMax, int viewPortX, int viewPortY, int viewPortWidth, int viewPortHeight)$/;"	f
+enterPerspective	Utility.h	/^void enterPerspective(int viewPortX, int viewPortY, int viewPortWidth, int viewPortHeight, int viewDistance)$/;"	f
+escMenu	CGUI.h	/^	CMenu *escMenu, *headerMenu, *footerMenu, *leftMenu, *rightMenu, *squareMenu;$/;"	m	class:CFixedGUI
+evaluateNextColour	SpaceSelector.h	/^void CColourCodedSelection::evaluateNextColour(void)											\/\/ change lastColour to next available colour$/;"	f	class:CColourCodedSelection
+evaluateNextColour	SpaceSelector.h	/^void CColourCodedSelection_map::evaluateNextColour(void)											\/\/ change lastColour to next available colour$/;"	f	class:CColourCodedSelection_map
+extractString	MFont.h	/^const char *extractString(int key, const char* filename)					\/\/ Gets string from a file of ints and their respective strings$/;"	f
+floatArray3	CommonTypes.h	/^typedef float floatArray3[3];$/;"	t
+floatArray4	CommonTypes.h	/^typedef float floatArray4[4];$/;"	t
+foodDue	MCube.h	/^int CCubeTribe::foodDue(cubeNode *cubeNodeToEvaluate, int foodRemaining)  \/\/ Return food to take from cube while leaving enough for cube's survival$/;"	f	class:CCubeTribe
+foodMem	MCube.h	/^	Vec2d foodMem;														\/\/ holds positions of known food.$/;"	m	class:CCubeBodyMind
+foodStored	MCube.h	/^	int foodStored;                                                     \/\/ Food stored in units of 1, so 1 int = 1 food unit = 1 health unit$/;"	m	class:CCubeBackPack
+footerMenu	CGUI.h	/^	CMenu *escMenu, *headerMenu, *footerMenu, *leftMenu, *rightMenu, *squareMenu;$/;"	m	class:CFixedGUI
+foundFood	MCube.h	/^bool CCubeBodyMind::foundFood(int x, int z)							    \/\/ Found food? and loc needs to be recorded.$/;"	f	class:CCubeBodyMind
+foundMaterial	MCube.h	/^bool CCubeBodyMind::foundMaterial(int x, int z)						    \/\/ Found material? and loc needs to be recorded.$/;"	f	class:CCubeBodyMind
+fullscreen	funProj.cpp	/^bool fullscreen = false, perspective = true, mousePos[4] = {0}; \/\/ Mouse pos; if y < 50, [0] = 1, if x >WINWidth - 50, [1] = 1$/;"	v
+gameFoodLocX	funProj.cpp	/^int SHADE = 0, gameFoodLocZ, gameFoodLocX, gameMaterialLocX, gameMaterialLocZ;\/\/ global food location var$/;"	v
+gameFoodLocZ	funProj.cpp	/^int SHADE = 0, gameFoodLocZ, gameFoodLocX, gameMaterialLocX, gameMaterialLocZ;\/\/ global food location var$/;"	v
+gameLevelSky	MSkyBox.h	7;"	d
+gameMaterialLocX	funProj.cpp	/^int SHADE = 0, gameFoodLocZ, gameFoodLocX, gameMaterialLocX, gameMaterialLocZ;\/\/ global food location var$/;"	v
+gameMaterialLocZ	funProj.cpp	/^int SHADE = 0, gameFoodLocZ, gameFoodLocX, gameMaterialLocX, gameMaterialLocZ;\/\/ global food location var$/;"	v
+getCallBack	SpaceSelector.h	/^void (*selectableData::getCallBack(void))(void)$/;"	f
+getColourCode	SpaceSelector.h	/^Vert3xf *selectableData::getColourCode(void)$/;"	f	class:selectableData
+getCurrentGUIStateNode	CGUI.h	/^CGUIStateNode *CGUISystem::getCurrentGUIStateNode(void)$/;"	f	class:CGUISystem
+getCurrentGUIStateNodeID	CGUI.h	/^int CGUISystem::getCurrentGUIStateNodeID(void)$/;"	f	class:CGUISystem
+getFileLength	Utility.h	/^unsigned long getFileLength(fstream &file)				\/\/ Get length of char array$/;"	f
+getFoodStored	MCube.h	/^int CCubeBackPack::getFoodStored(void)$/;"	f	class:CCubeBackPack
+getGUIStateNodeID	CGUI.h	/^int CGUIStateNode::getGUIStateNodeID(void)$/;"	f	class:CGUIStateNode
+getMaterialStored	MCube.h	/^int CCubeBackPack::getMaterialStored(void)$/;"	f	class:CCubeBackPack
+getMenuItemHead	CGUI.h	/^CMenuItemNode *CMenu::getMenuItemHead(void)$/;"	f	class:CMenu
+getMenuListHead	CGUI.h	/^CMenuNode *CGUIState::getMenuListHead(void)$/;"	f	class:CGUIState
+getMenuStyle	CGUI.h	/^MENU_STYLE CMenu::getMenuStyle(void)$/;"	f	class:CMenu
+getNumMenuItems	CGUI.h	/^int CMenu::getNumMenuItems(void)$/;"	f	class:CMenu
+getPixelFromGLBuffer	SpaceSelector.h	/^void getPixelFromGLBuffer(float *pixel, int mousePosX, int mousePosY, int windowWidth, int windowHeight, int bufferToRead)\/\/ Read frame buffer at mouseX\/Y$/;"	f
+getResponseKey	SpaceSelector.h	/^char selectableData::getResponseKey(void)$/;"	f	class:selectableData
+getStateToSet	SpaceSelector.h	/^int selectableData::getStateToSet(void)$/;"	f	class:selectableData
+getStringLength	MFont.h	/^int getStringLength(void *font, const unsigned char *string)		\/\/ Gives length in pixels to render this string$/;"	f
+giveFood	MCube.h	/^int CCubeBackPack::giveFood(int howMuchFood)$/;"	f	class:CCubeBackPack
+giveFood	MCube.h	/^int CCubeTribe::giveFood(int howMuchFood)$/;"	f	class:CCubeTribe
+giveMaterial	MCube.h	/^int CCubeBackPack::giveMaterial(int howMuchMaterial)$/;"	f	class:CCubeBackPack
+glTexID	CommonTypes.h	/^	int glTexID;$/;"	m	struct:_drawableObj
+globalTribes	MCube.h	/^	CCubeTribe globalTribes[TRIBE_NUMTRIBES];                            \/\/ Array of tribes$/;"	m	class:CCubeGod
+guiStateNodeHead	CGUI.h	/^	CGUIStateNode *guiStateNodeHead, *currentGUIStateNode;$/;"	m	class:CGUISystem
+gx	curWorkSesh.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+gx	curWorkSesh.vim	/^vmap gx <Plug>NetrwBrowseXVis$/;"	m
+headerMenu	CGUI.h	/^	CMenu *escMenu, *headerMenu, *footerMenu, *leftMenu, *rightMenu, *squareMenu;$/;"	m	class:CFixedGUI
+headofMasterList	MCube.h	/^	cubeNode *headofMasterList, *tempCubeNode;							\/\/ Points to Head of Master Cube list, temp traverses this list$/;"	m	class:CCubeGod
+highest01	Utility.h	/^float highest01(float num)		\/\/ highest 0.1, so 0.29 -> 0.3$/;"	f
+idle	funProj.cpp	/^void idle()$/;"	f
+infoOnTribe	MCube.h	/^	cubesTribeInfo infoOnTribe;											\/\/ Struct contains info on tribe;$/;"	m	class:CCubeBodyMind
+init	funProj.cpp	/^bool init()$/;"	f
+initCubes	MCube.h	/^void CCubeGod::initCubes(void)   \/\/ MasterList created, now assign cubes to a sector, fill out sector lists$/;"	f	class:CCubeGod
+inputDistributor	funProj.cpp	/^void inputDistributor(void)$/;"	f
+intToByteArray	ENDIAN.H	/^void CEndian::intToByteArray(int num, int bytes, unsigned char *arr, int type)$/;"	f	class:CEndian
+isFoodPackFull	MCube.h	/^bool CCubeBackPack::isFoodPackFull(void)$/;"	f	class:CCubeBackPack
+isHungry	MCube.h	/^bool CCubeBodyMind::isHungry(void)										\/\/ Called when food is found, and loc needs to be recorded.$/;"	f	class:CCubeBodyMind
+isMaterialPackFull	MCube.h	/^bool CCubeBackPack::isMaterialPackFull(void)$/;"	f	class:CCubeBackPack
+isMoveMagZero	MCube.h	/^bool CCube::isMoveMagZero(void)$/;"	f	class:CCube
+isPrepUnloadFood	MCube.h	/^bool CCubeBackPack::isPrepUnloadFood(void)$/;"	f	class:CCubeBackPack
+isPrepUnloadMaterial	MCube.h	/^bool CCubeBackPack::isPrepUnloadMaterial(void)$/;"	f	class:CCubeBackPack
+isTribeMember	MCube.h	/^bool CCubeBodyMind::isTribeMember(void)										\/\/ Called when food is found, and loc needs to be recorded.$/;"	f	class:CCubeBodyMind
+itemTextureRGB	CGUI.h	/^	RGB *itemTextureRGB;					\/\/ Array of float[3] holding texture to use for menu item$/;"	m	class:CMenuItemNode
+itemTextureRGBA	CGUI.h	/^	RGBA *itemTextureRGBA;					\/\/ Array of float[4] holding texture to use for menu item$/;"	m	class:CMenuItemNode
+knowFoodLocation	MCube.h	/^bool CCubeBodyMind::knowFoodLocation(void)      					    \/\/ Gotta be a better way to do this....$/;"	f	class:CCubeBodyMind
+knowFoodLocation	MCube.h	/^bool CCubeTribe::knowFoodLocation(void)      					    \/\/ Gotta be a better way to do this....$/;"	f	class:CCubeTribe
+knowMaterialLocation	MCube.h	/^bool CCubeBodyMind::knowMaterialLocation(void)      				    \/\/ Gotta be a better way to do this....$/;"	f	class:CCubeBodyMind
+knowMaterialLocation	MCube.h	/^bool CCubeTribe::knowMaterialLocation(void)      					    \/\/ Gotta be a better way to do this....$/;"	f	class:CCubeTribe
+lastColour	SpaceSelector.h	/^	Vert3xf lastColour;$/;"	m	class:CColourCodedSelection
+lastColour	SpaceSelector.h	/^	Vert3xf lastColour;$/;"	m	class:CColourCodedSelection_map
+lastTribeMemberContacted	MCube.h	/^	int tribeCallBackThreshold, lastTribeMemberContacted;											\/\/ return to tribe demand$/;"	m	struct:_tribeToCubeInfo
+leftMenu	CGUI.h	/^	CMenu *escMenu, *headerMenu, *footerMenu, *leftMenu, *rightMenu, *squareMenu;$/;"	m	class:CFixedGUI
+leftNeg	MCube.h	/^	cubeNodeBSTNode *parentPos, *childNeg, *rightPos, *leftNeg;$/;"	m	class:cubeNodeBSTNode
+lengthProjectionV1onV2	Utility.h	/^void lengthProjectionV1onV2()$/;"	f
+lightAmbient	funProj.cpp	/^float lightAmbient[] = { 0.2f, 0.3f, 0.6f, 1.0f };               \/\/Light colour values.$/;"	v
+lightDiffuse	funProj.cpp	/^float lightDiffuse[] = { 0.2f, 0.3f, 0.6f, 1.0f };$/;"	v
+lineWth	funProj.cpp	/^float ptSize = 0, lineWth = 0;$/;"	v
+loadGameSkyBox	MSkyBox.h	/^void loadGameSkyBox(void)$/;"	f
+loadSkyBox	MSkyBox.h	/^void GameSkyBox::loadSkyBox(void)											\/\/ Load images for skybox$/;"	f	class:GameSkyBox
+lookOperations	CCamera.h	/^enum lookOperations													\/\/ Directions to rotate camera view$/;"	g
+main	funProj.cpp	/^int main(int argc, char *argv[])$/;"	f
+materialInSight	MCube.h	/^bool CCube::materialInSight(int materialLocX, int materialLocZ) 		\/\/ Cube sees material?$/;"	f	class:CCube
+materialMem	MCube.h	/^	Vec2d materialMem;													\/\/ holds position of known materials$/;"	m	class:CCubeBodyMind
+materialStored	MCube.h	/^	int materialStored;                                                \/\/ Resources stored$/;"	m	class:CCubeBackPack
+maxPitch	CCamera.h	/^    float maxPitch, rotationSpeed, translateSpeed;					\/\/ Greatest angle at which user can look up\/down$/;"	m	class:CFixedPitchCamera
+maxX	CommonTypes.h	/^	float minX, maxX, minY, maxY, minZ, maxZ;$/;"	m	struct:_Bounds
+maxY	CommonTypes.h	/^	float minX, maxX, minY, maxY, minZ, maxZ;$/;"	m	struct:_Bounds
+maxZ	CommonTypes.h	/^	float minX, maxX, minY, maxY, minZ, maxZ;$/;"	m	struct:_Bounds
+menu	CGUI.h	/^	CMenu *menu;$/;"	m	class:CMenuNode
+menuHeadingText	CGUI.h	/^	const char *menuHeadingText;$/;"	m	class:CMenu
+menuItemColour	CGUI.h	/^	Vert3xf menuItemColour;$/;"	m	class:CMenuItemNode
+menuItemScaleFactor	CGUI.h	/^	int currentID, screenWidth, screenHeight, menuScaleFactor, menuItemScaleFactor;$/;"	m	class:CGUISystem
+menuItemText	CGUI.h	/^	const char* menuItemText;$/;"	m	class:CMenuItemNode
+menuItemsHead	CGUI.h	/^	CMenuItemNode *menuItemsHead;$/;"	m	class:CMenu
+menuListHead	CGUI.h	/^	CMenuNode *menuListHead;				\/\/ List of menues to display$/;"	m	class:CGUIState
+menuScaleFactor	CGUI.h	/^	int currentID, screenWidth, screenHeight, menuScaleFactor, menuItemScaleFactor;$/;"	m	class:CGUISystem
+menuStyle	CGUI.h	/^	MENU_STYLE menuStyle;$/;"	m	class:CMenu
+menuTextureRGB	CGUI.h	/^	RGB *menuTextureRGB;												\/\/ Array of float[3] holding texture to use as backdrop for menu$/;"	m	class:CMenu
+menuTextureRGBA	CGUI.h	/^	RGBA *menuTextureRGBA;												\/\/ Array of float[4] holding texture to use as backdrop for menu$/;"	m	class:CMenu
+menuTransform	CGUI.h	/^}menuTransform;$/;"	t	typeref:struct:_menuTransform
+minX	CommonTypes.h	/^	float minX, maxX, minY, maxY, minZ, maxZ;$/;"	m	struct:_Bounds
+minY	CommonTypes.h	/^	float minX, maxX, minY, maxY, minZ, maxZ;$/;"	m	struct:_Bounds
+minZ	CommonTypes.h	/^	float minX, maxX, minY, maxY, minZ, maxZ;$/;"	m	struct:_Bounds
+modifier_cubeActivity	MCube.h	/^	int modifier_cubeActivity, modifier_cubeStamina;$/;"	m	struct:_cubeModifiers
+modifier_cubeBackPackSize	MCube.h	/^	int modifier_cubeLife, modifier_cubeBackPackSize;$/;"	m	struct:_cubeModifiers
+modifier_cubeLife	MCube.h	/^	int modifier_cubeLife, modifier_cubeBackPackSize;$/;"	m	struct:_cubeModifiers
+modifier_cubeStamina	MCube.h	/^	int modifier_cubeActivity, modifier_cubeStamina;$/;"	m	struct:_cubeModifiers
+mouse	funProj.cpp	/^void mouse(int button, int state, int x, int y)$/;"	f
+mouseEvent	MInput.h	/^}mouseEvent;$/;"	t	typeref:struct:_mouseEvent
+mouseLeftDown	MInput.h	/^	bool mouseLeftDown, mouseRightDown, mouseMidDown;$/;"	m	struct:_mouseEvent
+mouseMidDown	MInput.h	/^	bool mouseLeftDown, mouseRightDown, mouseMidDown;$/;"	m	struct:_mouseEvent
+mousePickable	SpaceSelector.h	/^	unsigned int *mousePickable;$/;"	m	class:CSelection
+mousePos	funProj.cpp	/^bool fullscreen = false, perspective = true, mousePos[4] = {0}; \/\/ Mouse pos; if y < 50, [0] = 1, if x >WINWidth - 50, [1] = 1$/;"	v
+mousePosX	funProj.cpp	/^int mousePosX = 0, mousePosY = 0, resizeWINWidth = WINWidth, resizeWINHeight = WINHeight;$/;"	v
+mousePosY	funProj.cpp	/^int mousePosX = 0, mousePosY = 0, resizeWINWidth = WINWidth, resizeWINHeight = WINHeight;$/;"	v
+mouseRightDown	MInput.h	/^	bool mouseLeftDown, mouseRightDown, mouseMidDown;$/;"	m	struct:_mouseEvent
+moveAnyRandDir	MCube.h	/^void CCube::moveAnyRandDir(void)                                     \/\/ UNUSED,instead: pickNewPathDir TO GET RAND PATH Cube picks random dir, moves 1 grid$/;"	f	class:CCube
+moveDetPath	MCube.h	/^void CCube::moveDetPath(void)                                        \/\/ Move determined path, as in, cube randomly chose path$/;"	f	class:CCube
+moveDir	MCube.h	/^    Vec2d moveDir;                                                      \/\/ Movement direction; e1: x dir, e2; ydir:: possible vals: 0, 1, -1$/;"	m	class:CCube
+moveDirections	CCamera.h	/^enum moveDirections													\/\/ Directions to translate camera$/;"	g
+moveMag	MCube.h	/^    int moveMag;                                                        \/\/ Magnitude of move vector$/;"	m	class:CCube
+moveSelection	SpaceSelector.h	/^void CSelection::moveSelection(SELECT_MOVE_DIR moveDir)$/;"	f	class:CSelection
+name	SpaceSelector.h	/^	const char *name;$/;"	m	class:CSelectableNode
+nameSelected	SpaceSelector.h	/^	GLuint numHits, nameSelected;$/;"	m	class:CSelection
+nextCubeInMasterList	MCube.h	/^	cubeNode *nextCubeInMasterList;                                     \/\/ master linkList contains all cubes$/;"	m	class:cubeNode
+nextCubeInSectorList	MCube.h	/^	cubeNode *nextCubeInSectorList, *prevCubeInSectorList;              \/\/ sectorlist contains all cubes in sector$/;"	m	class:cubeNode
+nextCubeInTribe	MCube.h	/^	cubeNode *nextCubeInTribe, *prevCubeInTribe;                        \/\/ tribe list contains all cube in tribe$/;"	m	class:cubeNode
+nextGUIStateNode	CGUI.h	/^	CGUIStateNode *nextGUIStateNode;$/;"	m	class:CGUIStateNode
+nextMenuItem	CGUI.h	/^	CMenuItemNode *nextMenuItem;$/;"	m	class:CMenuItemNode
+nextMenuNode	CGUI.h	/^	CMenuNode *nextMenuNode;$/;"	m	class:CMenuNode
+nextSelectable	SpaceSelector.h	/^	CSelectableNode *nextSelectable;$/;"	m	class:CSelectableNode
+nextTribeFeeder	MCube.h	/^	CTribeFeederNode *nextTribeFeeder, *prevTribeFeeder;		\/\/ Next Feeder in list$/;"	m	class:CTribeFeederNode
+nextTribeMessenger	MCube.h	/^    CTribeMessengerNode *nextTribeMessenger, *prevTribeMessenger;		\/\/ Next messenger in list$/;"	m	class:CTribeMessengerNode
+nextTribePredator	MCube.h	/^	CTribePredatorNode *nextTribePredator, *prevTribePredator;	\/\/ Next Predator in list$/;"	m	class:CTribePredatorNode
+normalAlreadyDown	MInput.h	/^	bool normalAlreadyDown[256], specialAlreadyDown[256];			\/\/ Seems this is necessary, GLUT key repeat ignore funcs cant get em to work..$/;"	m	class:CKeyboard
+normalKey	MInput.h	/^	EKeyState normalKey[256], specialKey[256];$/;"	m	class:CKeyboard
+normalKeyAlreadyDown	MInput.h	/^bool CKeyboard::normalKeyAlreadyDown(int keyNum)$/;"	f	class:CKeyboard
+normalKeyDown	funProj.cpp	/^void normalKeyDown(unsigned char key, int x, int y)      					\/\/key pressed, and mouse pos when pressed.$/;"	f
+normalKeyUp	funProj.cpp	/^void normalKeyUp(unsigned char key, int x, int y)$/;"	f
+normalSetKeyAlreadyDown	MInput.h	/^void CKeyboard::normalSetKeyAlreadyDown(int keyNum)			\/\/ Set down state$/;"	f	class:CKeyboard
+normalize	Utility.h	/^void normalize(Vert2xf *vec)$/;"	f
+normalize	Utility.h	/^void normalize(Vert3xf *vec)$/;"	f
+normalize	Utility.h	/^void normalize(float *vec)$/;"	f
+numCubes	MCube.h	/^	int numCubes;$/;"	m	class:CCubeGod
+numHits	SpaceSelector.h	/^	GLuint numHits, nameSelected;$/;"	m	class:CSelection
+numMenuItems	CGUI.h	/^	int numMenuItems;$/;"	m	class:CMenu
+parentPos	MCube.h	/^	cubeNodeBSTNode *parentPos, *childNeg, *rightPos, *leftNeg;$/;"	m	class:cubeNodeBSTNode
+passiveMouse	funProj.cpp	/^void passiveMouse(int x, int y)$/;"	f
+perspective	funProj.cpp	/^bool fullscreen = false, perspective = true, mousePos[4] = {0}; \/\/ Mouse pos; if y < 50, [0] = 1, if x >WINWidth - 50, [1] = 1$/;"	v
+pickNewPathDir	MCube.h	/^void CCube::pickNewPathDir(bool isRand, int x, int z)            	\/\/ Cube randomly decides direction for new path, or picks path toward pos$/;"	f	class:CCube
+playerKeyboard	funProj.cpp	/^CKeyboard playerKeyboard;$/;"	v
+polygonMode	funProj.cpp	/^int polygonMode[2] = {0, 0};$/;"	v
+prevCubeInSectorList	MCube.h	/^	cubeNode *nextCubeInSectorList, *prevCubeInSectorList;              \/\/ sectorlist contains all cubes in sector$/;"	m	class:cubeNode
+prevCubeInTribe	MCube.h	/^	cubeNode *nextCubeInTribe, *prevCubeInTribe;                        \/\/ tribe list contains all cube in tribe$/;"	m	class:cubeNode
+prevCubeSectorXZ	MCube.h	/^    Vec2d cubeSectorXZ, prevCubeSectorXZ;								\/\/ e1 = X, e2 = Z: possible vals: -1, 1$/;"	m	class:CCube
+prevTribeFeeder	MCube.h	/^	CTribeFeederNode *nextTribeFeeder, *prevTribeFeeder;		\/\/ Next Feeder in list$/;"	m	class:CTribeFeederNode
+prevTribeMessenger	MCube.h	/^    CTribeMessengerNode *nextTribeMessenger, *prevTribeMessenger;		\/\/ Next messenger in list$/;"	m	class:CTribeMessengerNode
+prevTribePredator	MCube.h	/^	CTribePredatorNode *nextTribePredator, *prevTribePredator;	\/\/ Next Predator in list$/;"	m	class:CTribePredatorNode
+processCamera	CCamera.h	/^void CFixedPitchCamera::processCamera(int x, int y)	\/\/ Rotate using info from mouse input$/;"	f	class:CFixedPitchCamera
+processMenuMouseSelection	CGUI.h	/^void CGUISystem::processMenuMouseSelection(int mousePosX, int mousePosY)$/;"	f	class:CGUISystem
+ptSize	funProj.cpp	/^float ptSize = 0, lineWth = 0;$/;"	v
+quadFaceVerts	CommonTypes.h	/^	int *triFaceVerts, *quadFaceVerts, *textureCoordVerts, *colourValVerts;		\/\/ Index values to verticies in list$/;"	m	struct:_drawableObj
+queryNormalKey	MInput.h	/^EKeyState CKeyboard::queryNormalKey(int keyNum)$/;"	f	class:CKeyboard
+queryResponseKey	CGUI.h	/^bool CGUISystem::queryResponseKey(int key)$/;"	f	class:CGUISystem
+querySpecialKey	MInput.h	/^EKeyState CKeyboard::querySpecialKey(int keyNum)$/;"	f	class:CKeyboard
+radiansAngleV1V2	Utility.h	/^void radiansAngleV1V2(Vert3xf v1, Vert3xf v2)$/;"	f
+readFromFrontDrawToBack	SpaceSelector.h	/^void readFromFrontDrawToBack(void)		\/\/ read from frontbuf into float arr, draw float arr into backbuf at raster pos$/;"	f
+recruitCube	MCube.h	/^void CCubeTribe::recruitCube(cubeNode *cubeNodeToRecruit)$/;"	f	class:CCubeTribe
+registerCube	MCube.h	/^void CCubeGod::registerCube(cubeNode *cubeNodeToRegister)$/;"	f	class:CCubeGod
+registerTribeFeeder	MCube.h	/^void CCubeTribe::registerTribeFeeder(cubeNode *tribeFeederToReg)$/;"	f	class:CCubeTribe
+registerTribeMessenger	MCube.h	/^void CCubeTribe::registerTribeMessenger(cubeNode *tribeMessengerToReg)$/;"	f	class:CCubeTribe
+registerTribePredator	MCube.h	/^void CCubeTribe::registerTribePredator(cubeNode *tribePredatorToReg)$/;"	f	class:CCubeTribe
+render	CGUI.h	/^void CGUISystem::render(void)$/;"	f	class:CGUISystem
+renderSelectionBox	SpaceSelector.h	/^void CSelection::renderSelectionBox(void)$/;"	f	class:CSelection
+renderSelf	MCube.h	/^void CCube::renderSelf(void)$/;"	f	class:CCube
+renderSkyBox	MSkyBox.h	/^void GameSkyBox::renderSkyBox(float camPosX, float camPosY, float camPosZ)					\/\/ Draw the sky box$/;"	f	class:GameSkyBox
+render_string	MFont.h	/^void render_string(float x, float y, float z, void* font, const char* string)\/\/Got from lighthouse3d.com$/;"	f
+render_string_String	MFont.h	/^void render_string_String(float x, float y, float z, void *font, const unsigned char *string)		\/\/ const unsigned char... shouldnt matter eh?$/;"	f
+reportData	CCamera.h	/^void CArbAxisCamera::reportData(void)$/;"	f	class:CArbAxisCamera
+reportData	CCamera.h	/^void CFixedPitchCamera::reportData(void)$/;"	f	class:CFixedPitchCamera
+reset	MInput.h	/^	void reset(void)$/;"	f	struct:_mouseEvent
+resetKeys	MInput.h	/^void CKeyboard::resetKeys(void)								\/\/ GLUT api provides a keyUP callback func to update each key, not needed$/;"	f	class:CKeyboard
+resize	funProj.cpp	/^void resize(int w, int h)$/;"	f
+resizeWINHeight	funProj.cpp	/^int mousePosX = 0, mousePosY = 0, resizeWINWidth = WINWidth, resizeWINHeight = WINHeight;$/;"	v
+resizeWINWidth	funProj.cpp	/^int mousePosX = 0, mousePosY = 0, resizeWINWidth = WINWidth, resizeWINHeight = WINHeight;$/;"	v
+respondsToKey	SpaceSelector.h	/^	int respondsToKey;$/;"	m	class:selectableData
+returnSectorHead	MCube.h	/^cubeNode *CCubeGod::returnSectorHead(int X, int Z)			\/\/ Could be dangerous? because vals x,z maybe 0,0 or NAN, or unzero.. unpredictable..?$/;"	f	class:CCubeGod
+rightMenu	CGUI.h	/^	CMenu *escMenu, *headerMenu, *footerMenu, *leftMenu, *rightMenu, *squareMenu;$/;"	m	class:CFixedGUI
+rightPos	MCube.h	/^	cubeNodeBSTNode *parentPos, *childNeg, *rightPos, *leftNeg;$/;"	m	class:cubeNodeBSTNode
+rotMat	CCamera.h	/^    Mat3x4 rotMat;									\/\/ Matrix holding rotation$/;"	m	class:CArbAxisCamera
+rotationSpeed	CCamera.h	/^    float maxPitch, rotationSpeed, translateSpeed;					\/\/ Greatest angle at which user can look up\/down$/;"	m	class:CFixedPitchCamera
+rotationSpeed	CCamera.h	/^    float rotationSpeed, translateSpeed;			\/\/ Amount to rotate by$/;"	m	class:CArbAxisCamera
+s:cpo_save	curWorkSesh.vim	/^let s:cpo_save=&cpo$/;"	v
+s:l	curWorkSesh.vim	/^let s:l = 149 - ((17 * winheight(0) + 32) \/ 64)$/;"	v
+s:l	curWorkSesh.vim	/^let s:l = 151 - ((30 * winheight(0) + 32) \/ 64)$/;"	v
+s:l	curWorkSesh.vim	/^let s:l = 5 - ((4 * winheight(0) + 32) \/ 64)$/;"	v
+s:l	curWorkSesh.vim	/^let s:l = 7 - ((6 * winheight(0) + 32) \/ 64)$/;"	v
+s:so_save	curWorkSesh.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	curWorkSesh.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	curWorkSesh.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+scalePos	CCamera.h	/^void CArbAxisCamera::scalePos(float k)$/;"	f	class:CArbAxisCamera
+scalePos	CCamera.h	/^void CFixedPitchCamera::scalePos(float k)$/;"	f	class:CFixedPitchCamera
+scenePtr	CGUI.h	/^	void (*scenePtr)(void);					\/\/ dont need blocking\/non, just check for null. If NON_BLOCKING type, Func holds draw calls that the HUD is to be overlaid upon$/;"	m	class:CGUIState
+screenHeight	CGUI.h	/^	int currentID, screenWidth, screenHeight, menuScaleFactor, menuItemScaleFactor;$/;"	m	class:CGUISystem
+screenWidth	CGUI.h	/^	int currentID, screenWidth, screenHeight, menuScaleFactor, menuItemScaleFactor;$/;"	m	class:CGUISystem
+sectorHead	MCube.h	/^	cubeNode *sectorHead[4];											\/\/ Only four sectors for now, ofcourse smaller sectors better(?)$/;"	m	class:CCubeGod
+sectorID	MCube.h	/^	int affiliatedTribeID, tribeMemberNum, sectorID;					\/\/ Current tribe, tribe member number, current sector$/;"	m	class:cubeNode
+selectableData	SpaceSelector.h	/^class selectableData		\/\/ rename this to selectableDataGUISys$/;"	c
+selectableData	SpaceSelector.h	/^selectableData::selectableData(float *x, float *y, float *z, int key, void (*callBackToSet)(void), int _stateToSet)		\/\/ No default vals, might result in ambiguos callback\/key\/stateSet vals??$/;"	f	class:selectableData
+selectableMapData	SpaceSelector.h	/^}selectableMapData;$/;"	t	typeref:struct:_selectableMapData
+selectablesHead	SpaceSelector.h	/^	CSelectableNode *selectablesHead;$/;"	m	class:CColourCodedSelection
+selectablesMap	SpaceSelector.h	/^	map<Vert3xf*, selectableMapData> selectablesMap;					\/\/ Make a map with key; RGB, value; selectableMapData$/;"	m	class:CColourCodedSelection_map
+selectionBuffer	SpaceSelector.h	/^	GLuint selectionBuffer[1024];$/;"	m	class:CSelection
+selectionInfoList	CGUI.h	/^	list<selectableData> selectionInfoList;							\/\/ list holding menu item colour code and callback$/;"	m	class:CMenu
+selectionPos	SpaceSelector.h	/^	Vert3xf selectionPos;$/;"	m	class:CSelection
+setCallBack	SpaceSelector.h	/^void selectableData::setCallBack(void (*callBackToSet)(void) = NULL)$/;"	f	class:selectableData
+setCurrentGUIState	CGUI.h	/^bool CGUISystem::setCurrentGUIState(CGUIStateNode *currGUINode)			\/\/ Probably a bad idea..$/;"	f	class:CGUISystem
+setCurrentGUIState	CGUI.h	/^bool CGUISystem::setCurrentGUIState(int ID)$/;"	f	class:CGUISystem
+setFoodPos	funProj.cpp	/^void setFoodPos(bool isRand, int foodPosX, int foodPosZ)				\/\/ Picks random food location$/;"	f
+setGUIProperties	CGUI.h	/^void CGUISystem::setGUIProperties(int winWidth, int winHeight, int _menuScaleFactor = 1, int _menuItemScaleFactor = 1)$/;"	f	class:CGUISystem
+setMaterialPos	funProj.cpp	/^void setMaterialPos(bool isRand, int materialPosX, int materialPosZ)		\/\/ Picks random food location$/;"	f
+setMoveMag	MCube.h	/^void CCube::setMoveMag(int mag)										\/\/ Set magnitude to move along path$/;"	f	class:CCube
+setPathTowardFood	MCube.h	/^void CCube::setPathTowardFood(bool fromMemory = false)              \/\/ Cube sets path toward food$/;"	f	class:CCube
+setPathTowardMaterial	MCube.h	/^void CCube::setPathTowardMaterial(bool fromMemory = false)          \/\/ Cube sets path toward food$/;"	f	class:CCube
+shortToByteArray	ENDIAN.H	/^void CEndian::shortToByteArray(short num, int bytes, unsigned char *arr, int type)$/;"	f	class:CEndian
+size_x	TGA Loader.h	/^	int size_x;$/;"	m	struct:tImageTGA
+size_y	TGA Loader.h	/^	int size_y;$/;"	m	struct:tImageTGA
+skyBoxScaleFactor	MSkyBox.h	/^	int skyboxFaceSize, skyBoxScaleFactor;$/;"	m	class:GameSkyBox
+skyBox_down	MSkyBox.h	/^	GLuint skyBox_up, skyBox_down, skyBox_west, skyBox_east, skyBox_north, skyBox_south;\/\/ skybox texture ids$/;"	m	class:GameSkyBox
+skyBox_east	MSkyBox.h	/^	GLuint skyBox_up, skyBox_down, skyBox_west, skyBox_east, skyBox_north, skyBox_south;\/\/ skybox texture ids$/;"	m	class:GameSkyBox
+skyBox_north	MSkyBox.h	/^	GLuint skyBox_up, skyBox_down, skyBox_west, skyBox_east, skyBox_north, skyBox_south;\/\/ skybox texture ids$/;"	m	class:GameSkyBox
+skyBox_south	MSkyBox.h	/^	GLuint skyBox_up, skyBox_down, skyBox_west, skyBox_east, skyBox_north, skyBox_south;\/\/ skybox texture ids$/;"	m	class:GameSkyBox
+skyBox_up	MSkyBox.h	/^	GLuint skyBox_up, skyBox_down, skyBox_west, skyBox_east, skyBox_north, skyBox_south;\/\/ skybox texture ids$/;"	m	class:GameSkyBox
+skyBox_west	MSkyBox.h	/^	GLuint skyBox_up, skyBox_down, skyBox_west, skyBox_east, skyBox_north, skyBox_south;\/\/ skybox texture ids$/;"	m	class:GameSkyBox
+skyboxFaceSize	MSkyBox.h	/^	int skyboxFaceSize, skyBoxScaleFactor;$/;"	m	class:GameSkyBox
+smellFood	MCube.h	/^bool CCube::smellFood(int foodLocX, int foodLocZ)						\/\/ Cube smells food>?$/;"	f	class:CCube
+solidTorus	SpaceSelector.h	/^void solidTorus(void)$/;"	f
+specialAlreadyDown	MInput.h	/^	bool normalAlreadyDown[256], specialAlreadyDown[256];			\/\/ Seems this is necessary, GLUT key repeat ignore funcs cant get em to work..$/;"	m	class:CKeyboard
+specialKey	MInput.h	/^	EKeyState normalKey[256], specialKey[256];$/;"	m	class:CKeyboard
+specialKeyAlreadyDown	MInput.h	/^bool CKeyboard::specialKeyAlreadyDown(int keyNum)$/;"	f	class:CKeyboard
+specialKeyDown	funProj.cpp	/^void specialKeyDown(int key, int x, int y)   \/\/Used for special keys like F1., X,Y OF MOUSE AT PRESS OF KEY$/;"	f
+specialKeyUp	funProj.cpp	/^void specialKeyUp(int key, int x, int y)$/;"	f
+specialSetKeyAlreadyDown	MInput.h	/^void CKeyboard::specialSetKeyAlreadyDown(int keyNum)$/;"	f	class:CKeyboard
+square500	SpaceSelector.h	/^void square500(void)$/;"	f
+square700	SpaceSelector.h	/^void square700(void)$/;"	f
+squareMenu	CGUI.h	/^	CMenu *escMenu, *headerMenu, *footerMenu, *leftMenu, *rightMenu, *squareMenu;$/;"	m	class:CFixedGUI
+startPicking	SpaceSelector.h	/^void CSelection::startPicking(int mousePosX, int mousePosY)$/;"	f	class:CSelection
+stateToSet	SpaceSelector.h	/^	int stateToSet;$/;"	m	class:selectableData
+stopPicking	SpaceSelector.h	/^void CSelection::stopPicking(void)$/;"	f	class:CSelection
+style	CGUI.h	/^	MENU_ITEM_STYLE style;$/;"	m	class:CMenuItemNode
+tId	CommonTypes.h	/^	GLint tId;						   \/\/tId: is the faces' texture id.$/;"	m	struct:_Face4x
+tImageTGA	TGA Loader.h	/^struct tImageTGA$/;"	s
+tempCubeNode	MCube.h	/^	cubeNode *headofMasterList, *tempCubeNode;							\/\/ Points to Head of Master Cube list, temp traverses this list$/;"	m	class:CCubeGod
+textureCoordList	CommonTypes.h	/^	float *vertexList, *textureCoordList, *colourValueList;$/;"	m	struct:_vertexList
+textureCoordVerts	CommonTypes.h	/^	int *triFaceVerts, *quadFaceVerts, *textureCoordVerts, *colourValVerts;		\/\/ Index values to verticies in list$/;"	m	struct:_drawableObj
+textureFilename	MSkyBox.h	/^	char textureFilename[90];$/;"	m	class:GameSkyBox
+translatePos	CCamera.h	/^void CArbAxisCamera::translatePos(float x, float y, float z)$/;"	f	class:CArbAxisCamera
+translatePos	CCamera.h	/^void CFixedPitchCamera::translatePos(float x, float y, float z)$/;"	f	class:CFixedPitchCamera
+translateSpeed	CCamera.h	/^    float maxPitch, rotationSpeed, translateSpeed;					\/\/ Greatest angle at which user can look up\/down$/;"	m	class:CFixedPitchCamera
+translateSpeed	CCamera.h	/^    float rotationSpeed, translateSpeed;			\/\/ Amount to rotate by$/;"	m	class:CArbAxisCamera
+translation	CGUI.h	/^	Vert3xf translation;$/;"	m	struct:_menuTransform
+triFaceVerts	CommonTypes.h	/^	int *triFaceVerts, *quadFaceVerts, *textureCoordVerts, *colourValVerts;		\/\/ Index values to verticies in list$/;"	m	struct:_drawableObj
+tribeBirtherPos	MCube.h	/^    Vec2d tribeFoodPosConsensus, tribeMaterialPosConsensus, tribeBirtherPos, tribeSectorXZ;$/;"	m	class:CCubeTribe
+tribeCallBackThreshold	MCube.h	/^	int tribeCallBackThreshold, lastTribeMemberContacted;											\/\/ return to tribe demand$/;"	m	struct:_tribeToCubeInfo
+tribeColour	MCube.h	/^	GLfloat cubeColour[3], tribeColour[3];$/;"	m	class:CCubeBodyMind
+tribeColour	MCube.h	/^    GLfloat tribeColour[3];$/;"	m	class:CCubeTribe
+tribeFeeder	MCube.h	/^	cubeNode *tribeFeeder;										\/\/ Pt to cubeNode of Feeder$/;"	m	class:CTribeFeederNode
+tribeFeederHead	MCube.h	/^    CTribeFeederNode *tribeFeederHead;									\/\/ Head of feeder list$/;"	m	class:CCubeTribe
+tribeFoodPosConsensus	MCube.h	/^    Vec2d tribeFoodPosConsensus, tribeMaterialPosConsensus, tribeBirtherPos, tribeSectorXZ;$/;"	m	class:CCubeTribe
+tribeHasFood	MCube.h	/^	bool tribeHasFood;$/;"	m	struct:_tribeToCubeInfo
+tribeHead	MCube.h	/^    cubeNode *tribeHead;                                                \/\/ Head of tribe list$/;"	m	class:CCubeTribe
+tribeID	MCube.h	/^    int tribeVacancy, tribeID, tribeINFOExhangeDemand;$/;"	m	class:CCubeTribe
+tribeINFOExhangeDemand	MCube.h	/^    int tribeVacancy, tribeID, tribeINFOExhangeDemand;$/;"	m	class:CCubeTribe
+tribeInit	MCube.h	/^void CCubeGod::tribeInit(void)$/;"	f	class:CCubeGod
+tribeLifeCycle	MCube.h	/^void CCubeGod::tribeLifeCycle(void) \/\/ Rename to ProcessCycle\/ThinkinkCycle\/DecisionCycle?$/;"	f	class:CCubeGod
+tribeMaterialPosConsensus	MCube.h	/^    Vec2d tribeFoodPosConsensus, tribeMaterialPosConsensus, tribeBirtherPos, tribeSectorXZ;$/;"	m	class:CCubeTribe
+tribeMemberNum	MCube.h	/^	int affiliatedTribeID, tribeMemberNum, sectorID;					\/\/ Current tribe, tribe member number, current sector$/;"	m	class:cubeNode
+tribeMessenger	MCube.h	/^	cubeNode *tribeMessenger;											\/\/ Pt to cubeNode of messenger$/;"	m	class:CTribeMessengerNode
+tribeMessengerHead	MCube.h	/^    CTribeMessengerNode *tribeMessengerHead;							\/\/ Head of messenger list$/;"	m	class:CCubeTribe
+tribePos	MCube.h	/^	Vec2d tribePos;														\/\/ holds pos of tribe base$/;"	m	struct:_tribeToCubeInfo
+tribePredator	MCube.h	/^	cubeNode *tribePredator;									\/\/ Pt to cubeNode of Predator$/;"	m	class:CTribePredatorNode
+tribePredatorHead	MCube.h	/^    CTribePredatorNode *tribePredatorHead;								\/\/ Head of predator list$/;"	m	class:CCubeTribe
+tribeRenderArtifacts	MCube.h	/^void CCubeGod::tribeRenderArtifacts(void)$/;"	f	class:CCubeGod
+tribeSectorXZ	MCube.h	/^    Vec2d tribeFoodPosConsensus, tribeMaterialPosConsensus, tribeBirtherPos, tribeSectorXZ;$/;"	m	class:CCubeTribe
+tribeVacancy	MCube.h	/^    int tribeVacancy, tribeID, tribeINFOExhangeDemand;$/;"	m	class:CCubeTribe
+uintToByteArray	ENDIAN.H	/^void CEndian::uintToByteArray(unsigned int num, int bytes, unsigned char *arr, int type)$/;"	f	class:CEndian
+updateNormalKey	MInput.h	/^void CKeyboard::updateNormalKey(int keyNum, EKeyState status)$/;"	f	class:CKeyboard
+updateSpecialKey	MInput.h	/^void CKeyboard::updateSpecialKey(int keyNum, EKeyState status)$/;"	f	class:CKeyboard
+ushortToByteArray	ENDIAN.H	/^void CEndian::ushortToByteArray(unsigned short num, int bytes, unsigned char *arr, int type)$/;"	f	class:CEndian
+v1	CommonTypes.h	/^	Vert3xf v1, v2, v3, v4;$/;"	m	struct:_Face4xV
+v2	CommonTypes.h	/^	Vert3xf v1, v2, v3, v4;$/;"	m	struct:_Face4xV
+v3	CommonTypes.h	/^	Vert3xf v1, v2, v3, v4;$/;"	m	struct:_Face4xV
+v4	CommonTypes.h	/^	Vert3xf v1, v2, v3, v4;$/;"	m	struct:_Face4xV
+vertList	CommonTypes.h	/^	vertexList vertList;$/;"	m	struct:_drawableObj
+vertexList	CommonTypes.h	/^	float *vertexList, *textureCoordList, *colourValueList;$/;"	m	struct:_vertexList
+vertexList	CommonTypes.h	/^}vertexList;$/;"	t	typeref:struct:_vertexList
+viewPt	CCamera.h	/^	Vert3xf camPos, viewPt;							\/\/ viewPt; point at which cam rotates around, cam looks at$/;"	m	class:CArbAxisCamera
+viewPt	CCamera.h	/^    Vert3xf camPos, viewPt;							\/\/ viewPt; point at which cam rotates around, cam looks at$/;"	m	class:CFixedPitchCamera
+windowPosX	MInput.h	/^	int windowPosX, windowPosY;$/;"	m	struct:_mouseEvent
+windowPosY	MInput.h	/^	int windowPosX, windowPosY;$/;"	m	struct:_mouseEvent
+wireCone	SpaceSelector.h	/^void wireCone(void)$/;"	f
+wireSphere	SpaceSelector.h	/^void wireSphere(void)$/;"	f
+withinTerritory	MCube.h	/^bool CCubeTribe::withinTerritory(int posX, int posZ)$/;"	f	class:CCubeTribe
+x	CommonTypes.h	/^    float x,y,z;$/;"	m	struct:_Vert3xf
+x	CommonTypes.h	/^    float x,y;$/;"	m	struct:_Vert2x
+x	CommonTypes.h	/^    float x,y;$/;"	m	struct:_Vert2xf
+x	CommonTypes.h	/^    int x,y,z;$/;"	m	struct:_Vert3xd
+x	CommonTypes.h	/^    int x,y;$/;"	m	struct:_Vert2xd
+x	CommonTypes.h	/^  float x,y;$/;"	m	struct:_point
+xfa	funProj.cpp	/^float xrot = 0.0, yrot = 0, xfa = 0.1, yfa = 0.1;                \/\/Rotation values, and increment factor. (to be increase\/decreased)$/;"	v
+xrot	funProj.cpp	/^float xrot = 0.0, yrot = 0, xfa = 0.1, yfa = 0.1;                \/\/Rotation values, and increment factor. (to be increase\/decreased)$/;"	v
+y	CommonTypes.h	/^    float x,y,z;$/;"	m	struct:_Vert3xf
+y	CommonTypes.h	/^    float x,y;$/;"	m	struct:_Vert2x
+y	CommonTypes.h	/^    float x,y;$/;"	m	struct:_Vert2xf
+y	CommonTypes.h	/^    int x,y,z;$/;"	m	struct:_Vert3xd
+y	CommonTypes.h	/^    int x,y;$/;"	m	struct:_Vert2xd
+y	CommonTypes.h	/^  float x,y;$/;"	m	struct:_point
+yfa	funProj.cpp	/^float xrot = 0.0, yrot = 0, xfa = 0.1, yfa = 0.1;                \/\/Rotation values, and increment factor. (to be increase\/decreased)$/;"	v
+yrot	funProj.cpp	/^float xrot = 0.0, yrot = 0, xfa = 0.1, yfa = 0.1;                \/\/Rotation values, and increment factor. (to be increase\/decreased)$/;"	v
+z	CommonTypes.h	/^    float x,y,z;$/;"	m	struct:_Vert3xf
+z	CommonTypes.h	/^    int x,y,z;$/;"	m	struct:_Vert3xd
+zt	curWorkSesh.vim	/^normal! zt$/;"	m
+~CColourCodedSelection	SpaceSelector.h	/^CColourCodedSelection::~CColourCodedSelection(void)				\/\/ Run through, delete all nodes$/;"	f	class:CColourCodedSelection
+~CColourCodedSelection_map	SpaceSelector.h	/^CColourCodedSelection_map::~CColourCodedSelection_map(void)$/;"	f	class:CColourCodedSelection_map
+~CCubeGod	MCube.h	/^CCubeGod::~CCubeGod(void)$/;"	f	class:CCubeGod
+~CCubeTribe	MCube.h	/^CCubeTribe::~CCubeTribe(void)	\/\/ CHECK, UNFIN , ADD FEEDERS, CHECK FEEDERS ELSEWHERE$/;"	f	class:CCubeTribe
+~CEndian	ENDIAN.H	/^CEndian::~CEndian(void)$/;"	f	class:CEndian
+~CFixedGUI	CGUI.h	/^CFixedGUI::~CFixedGUI(void)$/;"	f	class:CFixedGUI
+~CGUIState	CGUI.h	/^CGUIState::~CGUIState()$/;"	f	class:CGUIState
+~CGUIStateNode	CGUI.h	/^CGUIStateNode::~CGUIStateNode(void)$/;"	f	class:CGUIStateNode
+~CGUISystem	CGUI.h	/^CGUISystem::~CGUISystem()$/;"	f	class:CGUISystem
+~CMenu	CGUI.h	/^CMenu::~CMenu(void)$/;"	f	class:CMenu
+~CMenuItemNode	CGUI.h	/^CMenuItemNode::~CMenuItemNode()$/;"	f	class:CMenuItemNode
+~CMenuNode	CGUI.h	/^CMenuNode::~CMenuNode(void)$/;"	f	class:CMenuNode
+~CSelectableNode	SpaceSelector.h	/^CSelectableNode::~CSelectableNode()$/;"	f	class:CSelectableNode
+~CSelection	SpaceSelector.h	/^CSelection::~CSelection(void)$/;"	f	class:CSelection
+~GameSkyBox	MSkyBox.h	/^GameSkyBox::~GameSkyBox(void)					\/\/ Delete loaded skybox images$/;"	f	class:GameSkyBox
+~selectableData	SpaceSelector.h	/^selectableData::~selectableData()$/;"	f	class:selectableData

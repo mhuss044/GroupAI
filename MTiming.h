@@ -27,18 +27,20 @@ void WaitForQSec(float qsecs)
     while((clock() - start) < (qsecs*float(CLOCKS_PER_SEC/4)));              // loop till time elapsed > #quarter seconds to wait
 }
 
-char* currentTime(char *specifiers = "%b %d, %Y; %Hh:%Mm:%Ss")          // Usually: "%b %d, %Y; %H:%M:%S\n"
+char* currentTime(char *specifiers)          // Usually: "%b %d, %Y; %H:%M:%S\n"
 {
     char *date;
     date = new char[90];
-
-    struct tm *tim;
+	struct tm *tim;
     time_t tim2;
 
     tim2 = time(NULL);
     tim = localtime(&tim2);
 
-    strftime(date, 90,specifiers, tim);                                 // Get date.
+	if(specifiers == NULL)
+			strftime(date, 90,"%b %d, %Y; %Hh:%Mm:%Ss", tim);                                 // Get date.
+	else
+			strftime(date, 90,specifiers, tim);                                 // Get date.
 
     return date;
 }

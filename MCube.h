@@ -748,12 +748,16 @@ bool CCube::decToGo(void)												// Move or not?
 // Rename to: Animate?
 void CCube::cubeLifeCycle(void)											// Stuff that happens to cube every cycle
 {
-    if(cubesBodyMind.isHungry())                                        // Is cube hungry?
-        cubesBodyMind.eat(cubesBackPack.giveFood(50));				// Eat some food from backpack
+	if(cubesBodyMind.isHungry())                                        // Is cube hungry?
+	{
+		cubesBodyMind.eat(cubesBackPack.giveFood(50));				// Eat some food from backpack
+	}
 
 	// Move:
 	if(decToGo())														// Regulate when cube can move, depends on cube activity factor
+	{
 		decNextPath();
+	}
 
     // Move along determined path:
     moveDetPath();
@@ -1248,28 +1252,28 @@ bool CCubeTribe::knowMaterialLocation(void)      					    // Gotta be a better w
 void CCubeTribe::consensusFoodPosUpdate(int foodPosX, int foodPosZ)  // Move foodPosConsensus closer to actual value
 {
 	// Yea thats bogus:
-    if(foodPosX < 0 || foodPosZ < 0)
-    	return;
+	if(foodPosX < 0 || foodPosZ < 0)
+		return;
 
 	tribeFoodPosConsensus.e1 += foodPosX;
-    tribeFoodPosConsensus.e2 += foodPosZ;
+	tribeFoodPosConsensus.e2 += foodPosZ;
 
-    tribeFoodPosConsensus.e1 /= 2;
-    tribeFoodPosConsensus.e2 /= 2;
+	tribeFoodPosConsensus.e1 /= 2;
+	tribeFoodPosConsensus.e2 /= 2;
 
-    // Cannot possibly have neg vals:
-    if(tribeFoodPosConsensus.e1 < 0 || tribeFoodPosConsensus.e2 < 0)
-    {
-    	tribeFoodPosConsensus.e1 = 0;
-    	tribeFoodPosConsensus.e2 = 0;
-    }
+	// Cannot possibly have neg vals:
+	if(tribeFoodPosConsensus.e1 < 0 || tribeFoodPosConsensus.e2 < 0)
+	{
+		tribeFoodPosConsensus.e1 = 0;
+		tribeFoodPosConsensus.e2 = 0;
+	}
 }
 
 void CCubeTribe::consensusMaterialPosUpdate(int materialPosX, int materialPosZ)  // Move tribeMaterialPosConsensus closer to actual value
 {
 	// Yea thats bogus:
-    if(materialPosX < 0 || materialPosZ < 0)
-    	return;
+	if(materialPosX < 0 || materialPosZ < 0)
+		return;
 
 	tribeMaterialPosConsensus.e1 += materialPosX;
 	tribeMaterialPosConsensus.e2 += materialPosZ;
@@ -1277,12 +1281,12 @@ void CCubeTribe::consensusMaterialPosUpdate(int materialPosX, int materialPosZ) 
 	tribeMaterialPosConsensus.e1 /= 2;
 	tribeMaterialPosConsensus.e2 /= 2;
 
-    // Cannot possibly have neg vals:
-    if(tribeMaterialPosConsensus.e1 < 0 || tribeMaterialPosConsensus.e2 < 0)
-    {
-    	tribeMaterialPosConsensus.e1 = 0;
-    	tribeMaterialPosConsensus.e2 = 0;
-    }
+	// Cannot possibly have neg vals:
+	if(tribeMaterialPosConsensus.e1 < 0 || tribeMaterialPosConsensus.e2 < 0)
+	{
+		tribeMaterialPosConsensus.e1 = 0;
+		tribeMaterialPosConsensus.e2 = 0;
+	}
 }
 
 int CCubeTribe::foodDue(cubeNode *cubeNodeToEvaluate, int foodRemaining)  // Return food to take from cube while leaving enough for cube's survival

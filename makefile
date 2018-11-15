@@ -6,7 +6,7 @@ PROGNAME = funproj
 CFLAGS = -g -Wall -O2 -pthread -std=c++11	# gnu99 in for declarations, c++11 for non static data member initialiazer
 #LIBS = -lmyLib 
 #LIBS = -L/usr/local/lib/apr -lapr-1		# require -L for spec directory, otherwise -l 
-LIBS = -lGL -lglut
+LIBS = -lGL -lGLU -lglut
 SRC =  funProj.cpp #-I/usr/local/include/gl
 OBJ = #funProj.o 
 
