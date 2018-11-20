@@ -21,16 +21,17 @@ CAMERA_LOOK_RIGHT	CCamera.h	/^	CAMERA_LOOK_RIGHT,$/;"	e	enum:lookOperations
 CAMERA_LOOK_ROLL_CCWISE	CCamera.h	/^	CAMERA_LOOK_ROLL_CCWISE$/;"	e	enum:lookOperations
 CAMERA_LOOK_ROLL_CWISE	CCamera.h	/^	CAMERA_LOOK_ROLL_CWISE,$/;"	e	enum:lookOperations
 CAMERA_LOOK_UP	CCamera.h	/^	CAMERA_LOOK_UP = 0,$/;"	e	enum:lookOperations
+CAMERA_MAX_PITCH	CCamera.h	39;"	d
 CAMERA_MOVE_BACKWARD	CCamera.h	/^	CAMERA_MOVE_BACKWARD,$/;"	e	enum:moveDirections
 CAMERA_MOVE_FORWARD	CCamera.h	/^	CAMERA_MOVE_FORWARD = 0,$/;"	e	enum:moveDirections
 CAMERA_MOVE_LEFT	CCamera.h	/^	CAMERA_MOVE_LEFT,$/;"	e	enum:moveDirections
 CAMERA_MOVE_RIGHT	CCamera.h	/^	CAMERA_MOVE_RIGHT$/;"	e	enum:moveDirections
-CAMERA_ROTATE_DEGREES	CCamera.h	37;"	d
-CAMERA_TRANSLATE_SPEED	CCamera.h	36;"	d
-CAMERA_ZOOM	CCamera.h	35;"	d
+CAMERA_ROTATE_DEGREES	CCamera.h	38;"	d
+CAMERA_TRANSLATE_SPEED	CCamera.h	37;"	d
+CAMERA_ZOOM	CCamera.h	36;"	d
 CArbAxisCamera	CCamera.h	/^CArbAxisCamera::CArbAxisCamera(float camViewPtX, float camViewPtY, float camViewPtZ, float rotSpeed = CAMERA_ROTATE_DEGREES, float transSpeed = CAMERA_TRANSLATE_SPEED)\/\/ Initialize.$/;"	f	class:CArbAxisCamera
 CArbAxisCamera	CCamera.h	/^class CArbAxisCamera$/;"	c
-CCAMERA_H_	CCamera.h	33;"	d
+CCAMERA_H_	CCamera.h	34;"	d
 CColourCodedSelection	SpaceSelector.h	/^CColourCodedSelection::CColourCodedSelection(void)$/;"	f	class:CColourCodedSelection
 CColourCodedSelection	SpaceSelector.h	/^class CColourCodedSelection$/;"	c
 CColourCodedSelection_map	SpaceSelector.h	/^CColourCodedSelection_map::CColourCodedSelection_map(void)$/;"	f	class:CColourCodedSelection_map
@@ -51,6 +52,7 @@ CFLAGS	makefile	/^CFLAGS = -g -Wall -O2 -pthread -std=c++11	# gnu99 in for decla
 CFixedGUI	CGUI.h	/^CFixedGUI::CFixedGUI(void)$/;"	f	class:CFixedGUI
 CFixedGUI	CGUI.h	/^class CFixedGUI					\/\/ Activated by keypress, selection via mouse$/;"	c
 CFixedPitchCamera	CCamera.h	/^CFixedPitchCamera::CFixedPitchCamera(float camViewPtX, float camViewPtY, float camViewPtZ, float pitchMax, float rotSpeed = CAMERA_ROTATE_DEGREES, float transSpeed = CAMERA_TRANSLATE_SPEED)\/\/ Initialize.$/;"	f	class:CFixedPitchCamera
+CFixedPitchCamera	CCamera.h	/^CFixedPitchCamera::CFixedPitchCamera(int camViewPtX, int camViewPtY, int camViewPtZ)\/\/ Initialize.$/;"	f	class:CFixedPitchCamera
 CFixedPitchCamera	CCamera.h	/^class CFixedPitchCamera$/;"	c
 CGUIState	CGUI.h	/^CGUIState::CGUIState(void (*sPtr)(void))$/;"	f	class:CGUIState
 CGUIState	CGUI.h	/^CGUIState::CGUIState(void)$/;"	f	class:CGUIState
@@ -127,7 +129,7 @@ DrawTriangle	Utility.h	/^void DrawTriangle()$/;"	f
 DrawUnitSquare	Utility.h	/^void DrawUnitSquare(void)$/;"	f
 EKeyState	MInput.h	/^enum EKeyState$/;"	g
 ENDIAN_CONV_H_	ENDIAN.H	7;"	d
-EXC	funProj.cpp	30;"	d	file:
+EXC	funProj.cpp	29;"	d	file:
 FEEDER	MCube.h	/^	FEEDER$/;"	e	enum:CUBETYPES
 FEEDER_TYPE	MCube.h	/^cubeModifiers FEEDER_TYPE;$/;"	v
 FONT_HEIGHT_IN_PIXELS	MFont.h	34;"	d
@@ -136,9 +138,9 @@ FORAGER_TYPE	MCube.h	/^cubeModifiers FORAGER_TYPE;$/;"	v
 Face4x	CommonTypes.h	/^}Face4x;$/;"	t	typeref:struct:_Face4x
 Face4xV	CommonTypes.h	/^}Face4xV;$/;"	t	typeref:struct:_Face4xV
 Fps	MFont.h	/^void Fps(void)$/;"	f
-GAME_MAP_SIZE_X	funProj.cpp	36;"	d	file:
-GAME_MAP_SIZE_Z	funProj.cpp	37;"	d	file:
-GDD	funProj.cpp	31;"	d	file:
+GAME_MAP_SIZE_X	funProj.cpp	35;"	d	file:
+GAME_MAP_SIZE_Z	funProj.cpp	36;"	d	file:
+GDD	funProj.cpp	30;"	d	file:
 GUIState	CGUI.h	/^	CGUIState *GUIState;$/;"	m	class:CGUIStateNode
 GUIStateNodeID	CGUI.h	/^	int GUIStateNodeID;$/;"	m	class:CGUIStateNode
 GUI_EDGE_PADDING	CGUI.h	98;"	d
@@ -172,14 +174,14 @@ GUI_STATE_NON_BLOCKING	CGUI.h	/^	GUI_STATE_NON_BLOCKING			\/\/ while runtime; ak
 GUI_STATE_TYPE	CGUI.h	/^enum GUI_STATE_TYPE$/;"	g
 GameSkyBox	MSkyBox.h	/^GameSkyBox::GameSkyBox(void)					\/\/ setup? loaded skybox images$/;"	f	class:GameSkyBox
 GameSkyBox	MSkyBox.h	/^class GameSkyBox$/;"	c
-INS	funProj.cpp	32;"	d	file:
+INS	funProj.cpp	31;"	d	file:
 InitMat	Utility.h	/^void InitMat(Mat2x mat)$/;"	f
 InitMat	Utility.h	/^void InitMat(Mat3x mat)$/;"	f
 InitMat	Utility.h	/^void InitMat(Mat3x4 mat)$/;"	f
 InitMat3x	Utility.h	/^void InitMat3x(Mat3x mat)$/;"	f
 Key_DOWN	MInput.h	/^	Key_DOWN = true		\/\/ Key is pushed$/;"	e	enum:EKeyState
 Key_UP	MInput.h	/^	Key_UP = false,$/;"	e	enum:EKeyState
-LIBS	makefile	/^LIBS = -lGL -lglut$/;"	m
+LIBS	makefile	/^LIBS = -lGL -lGLU -lglut$/;"	m
 LITTLE	ENDIAN.H	9;"	d
 Load_TGA	TGA Loader.h	/^tImageTGA *Load_TGA(const char *strfilename)$/;"	f
 Look	CCamera.h	/^void CArbAxisCamera::Look(lookOperations operation)$/;"	f	class:CArbAxisCamera
@@ -222,7 +224,7 @@ MultMat3x4xV	Utility.h	/^void MultMat3x4xV(Mat3x4 mat, Vert3xf *vert)$/;"	f
 MultMat3x4xVArr	Utility.h	/^void MultMat3x4xVArr(Mat3x4 mat, Vert3xf vertArr[], int numVerts)$/;"	f
 NUMCUBES	MCube.h	77;"	d
 OBJ	makefile	/^OBJ = #funProj.o $/;"	m
-PI	funProj.cpp	29;"	d	file:
+PI	funProj.cpp	28;"	d	file:
 PREDATOR	MCube.h	/^	PREDATOR,$/;"	e	enum:CUBETYPES
 PROGNAME	makefile	/^PROGNAME = funproj$/;"	m
 Pitch	CCamera.h	/^void CFixedPitchCamera::Pitch(float degrees)									\/\/ Rotate viewPt degrees around camPos$/;"	f	class:CFixedPitchCamera
@@ -260,7 +262,7 @@ TRIBE_TERRITORY_RADIUS	MCube.h	106;"	d
 TranslatePolyV2x	Utility.h	/^void TranslatePolyV2x(float xTrans, float yTrans, int NumVerts, Vert2x Verts[])$/;"	f
 TranslateV1x	Utility.h	/^void TranslateV1x(float xTrans, float yTrans, Vert2x& vertex)$/;"	f
 UTILITY_H_	Utility.h	12;"	d
-VIEW_DISTANCE	funProj.cpp	35;"	d	file:
+VIEW_DISTANCE	funProj.cpp	34;"	d	file:
 Vec2d	CommonTypes.h	/^}Vec2d;$/;"	t	typeref:struct:Vector2d
 Vec3d	CommonTypes.h	/^}Vec3d;$/;"	t	typeref:struct:Vector3d
 Vec3f	CommonTypes.h	/^}Vec3f;$/;"	t	typeref:struct:Vector3f
@@ -273,8 +275,8 @@ Vert2xf	CommonTypes.h	/^}Vert2xf;$/;"	t	typeref:struct:_Vert2xf
 Vert3xd	CommonTypes.h	/^}Vert3xd;$/;"	t	typeref:struct:_Vert3xd
 Vert3xf	CommonTypes.h	/^}Vert3xf;$/;"	t	typeref:struct:_Vert3xf
 WARRIOR_TYPE	MCube.h	/^cubeModifiers WARRIOR_TYPE;$/;"	v
-WINHeight	funProj.cpp	34;"	d	file:
-WINWidth	funProj.cpp	33;"	d	file:
+WINHeight	funProj.cpp	33;"	d	file:
+WINWidth	funProj.cpp	32;"	d	file:
 WaitForQSec	MTiming.h	/^void WaitForQSec(float qsecs)$/;"	f
 WaitForSecs	MTiming.h	/^void WaitForSecs(int secs)$/;"	f
 Yaw	CCamera.h	/^void CFixedPitchCamera::Yaw(float degrees)										\/\/ Rotate viewPt degrees around camPos$/;"	f	class:CFixedPitchCamera
@@ -399,7 +401,7 @@ cubesBodyMind	MCube.h	/^    CCubeBodyMind cubesBodyMind;										\/\/ Methods w
 cubesTribeInfo	MCube.h	/^}cubesTribeInfo;$/;"	t	typeref:struct:_tribeToCubeInfo
 currentGUIStateNode	CGUI.h	/^	CGUIStateNode *guiStateNodeHead, *currentGUIStateNode;$/;"	m	class:CGUISystem
 currentID	CGUI.h	/^	int currentID, screenWidth, screenHeight, menuScaleFactor, menuItemScaleFactor;$/;"	m	class:CGUISystem
-currentTime	MTiming.h	/^char* currentTime(char *specifiers = "%b %d, %Y; %Hh:%Mm:%Ss")          \/\/ Usually: "%b %d, %Y; %H:%M:%S\\n"$/;"	f
+currentTime	MTiming.h	/^char* currentTime(char *specifiers)          \/\/ Usually: "%b %d, %Y; %H:%M:%S\\n"$/;"	f
 cursorX	funProj.cpp	/^int cursorX = 0, cursorY = 0;$/;"	v
 cursorY	funProj.cpp	/^int cursorX = 0, cursorY = 0;$/;"	v
 d4	CommonTypes.h	/^	int a1[2], b2[2], c3[2], d4[2];	   \/\/The elements are individual verticies,$/;"	m	struct:_Face4x

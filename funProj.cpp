@@ -21,7 +21,6 @@
 //#include <SFML/Audio.hpp>	// Under windows
 #include <SFML/Audio.h>		// Under debian	
 
-
 using namespace std;
 /*****VARIABLES********************************************
 *************-*-*-*-*VARIABLES*-*-*-*-*********************
